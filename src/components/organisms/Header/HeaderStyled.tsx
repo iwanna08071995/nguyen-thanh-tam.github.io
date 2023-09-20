@@ -1,5 +1,5 @@
-// import styled from "@emotion/styled";
+import styled from "styled-components";
 
-// const HeaderStyled = styled("header")({ fontSize: 12 });
+const StyledHeader = styled.header``;
 
-// export default HeaderStyled;
+export default StyledHeader;
