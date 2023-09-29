@@ -4,18 +4,16 @@ import Header from "../organisms/Header";
 
 import { LayoutWithHeaderFooter } from "@/interfaces";
 
-const LayoutWithHeaderFooter: React.FC<LayoutWithHeaderFooter> = (props) => {
-  const { children } = props;
+const LayoutWithHeaderFooter = (props: LayoutWithHeaderFooter) => {
+  const { children, listLanguage } = props;
   return (
-    <div className="tw-flex tw-flex-col tw-h-screen">
-      <Header />
-      <div className="flex">123</div>
+    <div className="tw-flex tw-flex-col tw-h-screen tw-px-4">
+      <Header listLanguage={listLanguage} />
+      <div className="tw-flex tw-container tw-mx-auto">123</div>
       {/* <Main>{children}</Main>
       <Footer /> */}
     </div>
   );
 };
-
-LayoutWithHeaderFooter.propTypes = {};
 
 export default LayoutWithHeaderFooter;
