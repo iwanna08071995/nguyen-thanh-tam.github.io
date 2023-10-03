@@ -21,9 +21,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <StyledComponentsRegistry>
+        {children}
+        {/* <StyledComponentsRegistry>
           <AntdRegistry>{children}</AntdRegistry>
-        </StyledComponentsRegistry>
+        </StyledComponentsRegistry> */}
       </body>
     </html>
   );
