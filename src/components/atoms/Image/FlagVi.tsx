@@ -3,7 +3,7 @@ import * as React from "react";
 import { ImageProps } from "@/interfaces";
 
 const FlagVi = (props: ImageProps) => {
-  const { size } = props;
+  const { size = 800 } = props;
 
   return (
     <svg
@@ -46,10 +46,6 @@ const FlagVi = (props: ImageProps) => {
       </defs>
     </svg>
   );
-};
-
-FlagVi.defaultProps = {
-  size: 800,
 };
 
 export default FlagVi;

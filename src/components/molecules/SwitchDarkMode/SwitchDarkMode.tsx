@@ -10,7 +10,7 @@ import Button from "@/components/atoms/Button";
 const { DARK, LIGHT } = LIST_MODE_DARK_LIGHT;
 
 function SwitchDarkMode(props: SwitchDarkModeProps) {
-  const { size, mode } = props;
+  const { size = "1.6rem", mode = LIGHT } = props;
 
   const checkShowModeSystem = () => {
     const currentTime = new Date();
@@ -41,10 +41,5 @@ function SwitchDarkMode(props: SwitchDarkModeProps) {
     </SwitchDarkModeStyled>
   );
 }
-
-SwitchDarkMode.defaultProps = {
-  size: "1.6rem",
-  mode: LIGHT,
-};
 
 export default SwitchDarkMode;
