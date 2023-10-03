@@ -49,7 +49,7 @@ function LanguageSwitcher(props: LanguageSwitcherProps) {
   };
 
   return (
-    <LanguageSwitcherStyled>
+    <LanguageSwitcherStyled className="tw-flex">
       <Select
         className="tw-w-16"
         options={handleShowListOptions()}

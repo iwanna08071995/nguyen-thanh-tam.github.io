@@ -1,5 +1,7 @@
-import "@/styles/globals.css";
+import { display } from "@/styles/fonts";
 import StyledComponentsRegistry from "../lib/registry";
+
+import "@/styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -7,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html className={`${display.className}`}>
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

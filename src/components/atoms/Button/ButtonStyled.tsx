@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Button as ButtonAnt } from "antd";
 
-const Button = styled(ButtonAnt)``;
+const ButtonStyled = styled(ButtonAnt)``;
 
-export default Button;
+export default ButtonStyled;

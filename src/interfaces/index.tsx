@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
 
 interface MainProps {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 interface ButtonProps {
   children?: ReactNode;
+  type?: "link" | "dashed" | "primary" | "text";
 }
 
 interface SelectProps {
@@ -34,6 +35,20 @@ interface ImageProps {
   size?: string | number;
 }
 
+interface SwitchDarkModeProps {
+  size?: string | number;
+  mode: number;
+}
+
+interface ButtonExportPDFProps {
+  size?: string | number;
+}
+
+interface DividerProps {
+  className?: string;
+  width?: string | number;
+}
+
 export type {
   MainProps,
   LayoutWithHeaderFooter,
@@ -42,4 +57,7 @@ export type {
   SelectProps,
   ImageProps,
   LanguageSwitcherProps,
+  SwitchDarkModeProps,
+  ButtonExportPDFProps,
+  DividerProps,
 };
