@@ -3,7 +3,7 @@ import * as React from "react";
 import { ImageProps } from "@/interfaces";
 
 const FlagEn = (props: ImageProps) => {
-  const { size } = props;
+  const { size = 800 } = props;
 
   return (
     <svg
@@ -30,10 +30,6 @@ const FlagEn = (props: ImageProps) => {
       <path fill="#CF1B2B" d="M21 15V5h-6v10H0v6h15v10h6V21h15v-6z" />
     </svg>
   );
-};
-
-FlagEn.defaultProps = {
-  size: 800,
 };
 
 export default FlagEn;

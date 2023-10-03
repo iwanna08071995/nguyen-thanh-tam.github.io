@@ -59,6 +59,4 @@ function LanguageSwitcher(props: LanguageSwitcherProps) {
   );
 }
 
-LanguageSwitcher.defaultProps = {};
-
 export default LanguageSwitcher;

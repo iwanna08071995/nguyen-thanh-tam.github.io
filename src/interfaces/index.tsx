@@ -37,7 +37,7 @@ interface ImageProps {
 
 interface SwitchDarkModeProps {
   size?: string | number;
-  mode: number;
+  mode?: number;
 }
 
 interface ButtonExportPDFProps {

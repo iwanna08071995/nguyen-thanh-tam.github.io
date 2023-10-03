@@ -5,7 +5,7 @@ import Button from "@/components/atoms/Button";
 import { ButtonExportPDFProps } from "@/interfaces";
 
 const ButtonExportPDF = (props: ButtonExportPDFProps) => {
-  const { size } = props;
+  const { size = "1.6rem" } = props;
   return (
     <div>
       <Button type="text">
@@ -13,10 +13,6 @@ const ButtonExportPDF = (props: ButtonExportPDFProps) => {
       </Button>
     </div>
   );
-};
-
-ButtonExportPDF.defaultProps = {
-  size: "1.6rem",
 };
 
 export default ButtonExportPDF;

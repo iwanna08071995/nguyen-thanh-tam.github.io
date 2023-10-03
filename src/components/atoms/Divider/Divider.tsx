@@ -5,7 +5,7 @@ import { DividerProps } from "@/interfaces";
 import DividerStyled from "./DividerStyled";
 
 function Divider(props: DividerProps) {
-  const { className, width } = props;
+  const { className, width = "100%" } = props;
   return (
     <DividerStyled
       className={`tw-w-full tw-flex tw-justify-center ${className}`}
@@ -15,9 +15,5 @@ function Divider(props: DividerProps) {
     </DividerStyled>
   );
 }
-
-Divider.defaultProps = {
-  width: "100%",
-};
 
 export default Divider;
