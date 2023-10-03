@@ -1,7 +1,10 @@
 "use client";
 
 import LayoutWithHeaderFooter from "@/components/templates/LayoutWithHeaderFooter";
+import { LIST_LANGUAGE } from "@/utils/constant";
 
-export default function Home() {
-  return <LayoutWithHeaderFooter>123</LayoutWithHeaderFooter>;
-}
+const Home = () => {
+  return <LayoutWithHeaderFooter listLanguage={LIST_LANGUAGE} />;
+};
+
+export default Home;
