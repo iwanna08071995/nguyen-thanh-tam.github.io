@@ -22,9 +22,9 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        {/* <StyledComponentsRegistry>
-          <AntdRegistry>{children}</AntdRegistry>
-        </StyledComponentsRegistry> */}
+        {/* <StyledComponentsRegistry> */}
+        <AntdRegistry>{children}</AntdRegistry>
+        {/* </StyledComponentsRegistry> */}
       </body>
     </html>
   );
