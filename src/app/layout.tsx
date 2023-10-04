@@ -1,6 +1,4 @@
 import { display } from "@/styles/fonts";
-import StyledComponentsRegistry from "../lib/registry";
-import AntdRegistry from "../lib/AntdRegistry";
 
 import "@/styles/globals.css";
 
@@ -21,10 +19,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {children}
-        {/* <StyledComponentsRegistry> */}
-        <AntdRegistry>{children}</AntdRegistry>
-        {/* </StyledComponentsRegistry> */}
+        <>{children}</>
       </body>
     </html>
   );
