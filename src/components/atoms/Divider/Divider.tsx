@@ -5,10 +5,10 @@ import { DividerProps } from "@/interfaces";
 import DividerStyled from "./DividerStyled";
 
 function Divider(props: DividerProps) {
-  const { className, width = "100%" } = props;
+  const { className, width = "100%", position = "center" } = props;
   return (
     <DividerStyled
-      className={`tw-w-full tw-flex tw-justify-center ${className}`}
+      className={`tw-w-full tw-flex tw-justify-${position} ${className}`}
       width={width}
     >
       <hr />
