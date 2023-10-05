@@ -20,9 +20,3 @@ const Header = (props: HeaderProps) => {
 };
 
 export default Header;
-
-{
-  /* <div className="tw-flex tw-justify-between lg:tw-container lg:tw-mx-auto tw-px-4">
-123
-</div> */
-}

@@ -1,19 +1,17 @@
 import Header from "../organisms/Header";
 import Divider from "../atoms/Divider";
 // import Footer from "../../organisms/Footer";
-// import Main from "../../organisms/Main";
+import Main from "../organisms/Main";
 
 import { LayoutWithHeaderFooter } from "@/interfaces";
 
 const LayoutWithHeaderFooter = (props: LayoutWithHeaderFooter) => {
-  const { children, listLanguage } = props;
+  const { listLanguage, profile } = props;
   return (
     <div className={`tw-flex tw-flex-col tw-h-screen tw-px-4 `}>
       <Header listLanguage={listLanguage} />
-      <Divider className="tw-my-2" width="64%" />
-      <div className="tw-flex tw-container tw-mx-auto">123</div>
-      {/* <Main>{children}</Main>
-      <Footer /> */}
+      <Divider className="tw-my-2" width="100%" />
+      <Main profile={profile} />
     </div>
   );
 };

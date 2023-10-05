@@ -1,9 +1,5 @@
 import { ReactNode } from "react";
 
-interface MainProps {
-  children?: ReactNode;
-}
-
 interface ButtonProps {
   children?: ReactNode;
   type?: "link" | "dashed" | "primary" | "text";
@@ -47,10 +43,35 @@ interface ButtonExportPDFProps {
 interface DividerProps {
   className?: string;
   width?: string | number;
+  position?: "start" | "end" | "center";
+}
+
+interface AvatarProps {
+  size?: "large" | "small" | "default" | number;
+  src?: string | null;
+}
+
+interface MainProps {
+  profile: {
+    avatar: AvatarProps;
+    name?: string;
+    location?: string;
+    job?: string;
+  };
+}
+
+interface LayoutWrapperContentProps {
+  ContentLeft?: ReactNode | null;
+  ContentRight?: ReactNode | null;
+}
+
+interface InfoProps {
+  name: string | undefined;
+  job: string | undefined;
+  location: string | undefined;
 }
 
 export type {
-  MainProps,
   LayoutWithHeaderFooter,
   ButtonProps,
   HeaderProps,
@@ -60,4 +81,8 @@ export type {
   SwitchDarkModeProps,
   ButtonExportPDFProps,
   DividerProps,
+  AvatarProps,
+  MainProps,
+  LayoutWrapperContentProps,
+  InfoProps,
 };
