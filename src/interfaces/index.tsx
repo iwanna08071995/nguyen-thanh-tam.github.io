@@ -51,15 +51,6 @@ interface AvatarProps {
   src?: string | null;
 }
 
-interface MainProps {
-  profile: {
-    avatar: AvatarProps;
-    name?: string;
-    location?: string;
-    job?: string;
-  };
-}
-
 interface LayoutWrapperContentProps {
   ContentLeft?: ReactNode | null;
   ContentRight?: ReactNode | null;
@@ -69,6 +60,43 @@ interface InfoProps {
   name: string | undefined;
   job: string | undefined;
   location: string | undefined;
+}
+
+interface TitleContentProps {
+  title: string | undefined;
+}
+
+interface ContactProps extends TitleContentProps {
+  phone: string | undefined;
+  email: string | undefined;
+  website: string | undefined;
+}
+
+interface MainProps {
+  profile: {
+    avatar: AvatarProps;
+    name?: string;
+    location?: string;
+    job?: string;
+  };
+  contact: ContactProps;
+  aboutMe: AboutMeprops;
+  skillsSummary: SkillsSummaryProps;
+}
+
+interface AboutMeprops extends TitleContentProps {
+  content: string | undefined;
+}
+
+interface SkillsSummaryProps extends TitleContentProps {
+  content: string[] | [];
+}
+interface ListsProps {
+  content: string[] | [];
+}
+
+interface checkArrayNotEmptyFunc {
+  (params: any[] | undefined | string[] | []): boolean;
 }
 
 export type {
@@ -85,4 +113,10 @@ export type {
   MainProps,
   LayoutWrapperContentProps,
   InfoProps,
+  TitleContentProps,
+  ContactProps,
+  AboutMeprops,
+  SkillsSummaryProps,
+  ListsProps,
+  checkArrayNotEmptyFunc,
 };

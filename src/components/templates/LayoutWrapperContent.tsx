@@ -21,21 +21,21 @@ function LayoutWrapperContent(props: LayoutWrapperContentProps) {
   };
 
   return (
-    <div className="tw-flex tw-w-full tw-justify-between tw-items-center">
-      <div className="tw-flex tw-flex-col	tw-h-full	tw-w-4/12">
-        <div className="tw-flex tw-justify-center">{showContentLeft()}</div>
-        <Divider width="60%" className="tw-pt-2" />
+    <div className="tw-flex tw-justify-between tw-my-5">
+      <div className="tw-flex tw-flex-col	tw-w-4/12 tw-gap-5">
+        <div className="tw-flex tw-h-full tw-justify-center">
+          {showContentLeft()}
+        </div>
+        <Divider width="80%" />
       </div>
-      <div className="tw-flex tw-flex-col	tw-h-full	tw-w-7/12">
+      <div className="tw-flex tw-flex-col	tw-w-7/12 tw-gap-5">
         <div className="tw-flex tw-flex-col tw-justify-center tw-h-full tw-items-start">
           {showContentRight()}
         </div>
-        <Divider width="60%" position="start" className="tw-pt-2" />
+        <Divider width="80%" position="start" />
       </div>
     </div>
   );
 }
-
-LayoutWrapperContent.propTypes = {};
 
 export default LayoutWrapperContent;
