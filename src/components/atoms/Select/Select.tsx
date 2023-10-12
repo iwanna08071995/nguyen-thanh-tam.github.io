@@ -1,11 +1,11 @@
 import React from "react";
 import { Button as ButtonAnt } from "antd";
 
-import { SelectProps } from "@/interfaces";
+import { selectProps } from "@/interfaces";
 
 import SelectStyled from "./SelectStyled";
 
-const Select = (props: SelectProps) => {
+const Select = (props: selectProps) => {
   const {
     options = [],
     onChange = () => {},

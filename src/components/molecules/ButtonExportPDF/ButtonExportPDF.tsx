@@ -2,9 +2,9 @@ import React from "react";
 import { VscFilePdf } from "react-icons/vsc";
 
 import Button from "@/components/atoms/Button";
-import { ButtonExportPDFProps } from "@/interfaces";
+import { buttonExportPDFProps } from "@/interfaces";
 
-const ButtonExportPDF = (props: ButtonExportPDFProps) => {
+const ButtonExportPDF = (props: buttonExportPDFProps) => {
   const { size = "1.6rem" } = props;
   return (
     <div>

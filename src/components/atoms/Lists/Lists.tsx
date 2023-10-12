@@ -13,7 +13,7 @@ const Lists = (props: ListsProps) => {
       const show = content.map((value, index) => {
         return (
           <li key={index}>
-            <span className="tw-text-lg">{value}</span>
+            <span>{value}</span>
           </li>
         );
       });

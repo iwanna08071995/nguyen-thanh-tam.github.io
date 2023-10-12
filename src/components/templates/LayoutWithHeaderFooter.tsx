@@ -3,10 +3,20 @@ import Divider from "../atoms/Divider";
 // import Footer from "../../organisms/Footer";
 import Main from "../organisms/Main";
 
-import { LayoutWithHeaderFooter } from "@/interfaces";
+import { layoutWithHeaderFooter } from "@/interfaces";
 
-const LayoutWithHeaderFooter = (props: LayoutWithHeaderFooter) => {
-  const { listLanguage, profile, contact, aboutMe, skillsSummary } = props;
+const layoutWithHeaderFooter = (props: layoutWithHeaderFooter) => {
+  const {
+    listLanguage,
+    profile,
+    contact,
+    aboutMe,
+    skillsSummary,
+    skills,
+    libraries,
+    software,
+    education,
+  } = props;
   return (
     <div className={`tw-flex tw-flex-col tw-min-h-screen tw-px-4 `}>
       <Header listLanguage={listLanguage} />
@@ -15,10 +25,14 @@ const LayoutWithHeaderFooter = (props: LayoutWithHeaderFooter) => {
         contact={contact}
         aboutMe={aboutMe}
         skillsSummary={skillsSummary}
+        skills={skills}
+        libraries={libraries}
+        software={software}
+        education={education}
       />
       <div className="tw-h-8" />
     </div>
   );
 };
 
-export default LayoutWithHeaderFooter;
+export default layoutWithHeaderFooter;

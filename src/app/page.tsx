@@ -1,18 +1,40 @@
 "use client";
+import { ConfigProvider } from "antd";
 
-import LayoutWithHeaderFooter from "@/components/templates/LayoutWithHeaderFooter";
+import layoutWithHeaderFooter from "@/components/templates/layoutWithHeaderFooter";
 import { LIST_LANGUAGE } from "@/utils/constant";
-import { profile, contact, aboutMe, skillsSummary } from "@/db/data";
+import {
+  profile,
+  contact,
+  aboutMe,
+  skillsSummary,
+  skills,
+  libraries,
+  software,
+  education,
+} from "@/db/data";
 
 const Home = () => {
   return (
-    <LayoutWithHeaderFooter
-      listLanguage={LIST_LANGUAGE}
-      profile={profile}
-      contact={contact}
-      aboutMe={aboutMe}
-      skillsSummary={skillsSummary}
-    />
+    <ConfigProvider
+      theme={{
+        token: {
+          fontFamily: "--font-display",
+        },
+      }}
+    >
+      <layoutWithHeaderFooter
+        listLanguage={LIST_LANGUAGE}
+        profile={profile}
+        contact={contact}
+        aboutMe={aboutMe}
+        skillsSummary={skillsSummary}
+        skills={skills}
+        libraries={libraries}
+        software={software}
+        education={education}
+      />
+    </ConfigProvider>
   );
 };
 

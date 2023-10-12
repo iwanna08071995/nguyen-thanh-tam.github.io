@@ -1,10 +1,10 @@
 import React from "react";
 
 import Divider from "@/components/atoms/Divider";
-import { LayoutWrapperContentProps } from "@/interfaces";
+import { layoutWrapperContentProps } from "@/interfaces";
 
-function LayoutWrapperContent(props: LayoutWrapperContentProps) {
-  const { ContentLeft, ContentRight } = props;
+function LayoutWrapperContent(props: layoutWrapperContentProps) {
+  const { ContentLeft, ContentRight, leftPosition = "left" } = props;
 
   const showContentLeft = () => {
     if (ContentLeft) {
@@ -23,7 +23,7 @@ function LayoutWrapperContent(props: LayoutWrapperContentProps) {
   return (
     <div className="tw-flex tw-justify-between tw-my-5">
       <div className="tw-flex tw-flex-col	tw-w-4/12 tw-gap-5">
-        <div className="tw-flex tw-h-full tw-justify-center">
+        <div className={`tw-flex tw-h-full tw-justify-${leftPosition}`}>
           {showContentLeft()}
         </div>
         <Divider width="80%" />

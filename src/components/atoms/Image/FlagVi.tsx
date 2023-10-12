@@ -1,8 +1,8 @@
 import * as React from "react";
 
-import { ImageProps } from "@/interfaces";
+import { imageProps } from "@/interfaces";
 
-const FlagVi = (props: ImageProps) => {
+const FlagVi = (props: imageProps) => {
   const { size = 800 } = props;
 
   return (

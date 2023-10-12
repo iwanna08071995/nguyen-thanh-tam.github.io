@@ -1,13 +1,13 @@
 import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { SIZE_ICON_DEFAULT } from "@/utils/constant";
-import { InfoProps } from "@/interfaces";
+import { infoProps } from "@/interfaces";
 
-function Info(props: InfoProps) {
+function Info(props: infoProps) {
   const { location = "", job = "", name = "" } = props;
   return (
     <>
-      <span className="tw-text-3xl tw-font-medium">{name}</span>
+      <span className="tw-text-3xl tw-font-semibold	">{name}</span>
       <span className="tw-my-3 tw-text-2xl tw-font-light">{job}</span>
       <div className="tw-flex tw-items-center tw-gap-3 tw-mt-1">
         <CiLocationOn size={SIZE_ICON_DEFAULT} />

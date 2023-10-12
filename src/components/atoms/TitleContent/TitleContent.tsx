@@ -1,13 +1,13 @@
 import React from "react";
 
-import { TitleContentProps } from "@/interfaces";
+import { titleContentProps } from "@/interfaces";
 
 import TitleContentStyled from "./TitleContentStyled";
 
-function TitleContent(props: TitleContentProps) {
+function TitleContent(props: titleContentProps) {
   const { title } = props;
   return (
-    <TitleContentStyled className="tw-font-medium	 tw-text-2xl">
+    <TitleContentStyled className="tw-font-semibold		 tw-text-2xl">
       {title}
     </TitleContentStyled>
   );

@@ -4,13 +4,16 @@ import Avatar from "../../atoms/Avatar";
 import LayoutWrapperContent from "@/components/templates/LayoutWrapperContent";
 import Info from "@/components/molecules/Info";
 import Contact from "@/components/molecules/Contact";
-import { MainProps } from "@/interfaces";
-
-import MainStyled from "./MainStyled";
+import Divider from "@/components/atoms/Divider";
 import AboutMe from "@/components/molecules/AboutMe";
 import SkillsSummary from "@/components/molecules/SkillsSummary";
+import SkillsList from "@/components/molecules/SkillsList/SkillsList";
+import { mainProps } from "@/interfaces";
+import TimeLine from "@/components/molecules/TimeLine";
 
-function Main(props: MainProps) {
+import MainStyled from "./MainStyled";
+
+function Main(props: mainProps) {
   const {
     profile: {
       avatar: { size, src },
@@ -21,11 +24,18 @@ function Main(props: MainProps) {
     contact: { website, phone, title: titleContact, email },
     aboutMe: { content: contentAboutMe, title: titleAboutMe },
     skillsSummary: { title: titleSkillsSummary, content: contentSkillsSummary },
+    skills: { title: titleSkills, content: contentSkills },
+    libraries: { title: titleLibraries, content: contentLibraries },
+    software: { title: titleSoftware, content: contentSoftware },
+    education: { title: titleEducation, timeList: timeListEducation },
   } = props;
 
   return (
-    <MainStyled className="tw-max-w-7xl	tw-flex tw-flex-col tw-justify-between tw-container tw-mx-auto tw-px-4">
+    <MainStyled
+      className={`tw-max-w-7xl	tw-flex tw-flex-col tw-justify-between tw-container tw-mx-auto tw-px-4 `}
+    >
       <LayoutWrapperContent
+        leftPosition="center"
         ContentLeft={<Avatar src={src} size={size} />}
         ContentRight={<Info name={name} job={job} location={location} />}
       />
@@ -43,6 +53,23 @@ function Main(props: MainProps) {
       <SkillsSummary
         title={titleSkillsSummary}
         content={contentSkillsSummary}
+      />
+      <Divider width="80%" className="tw-my-5" />
+      <SkillsList title={titleSkills} content={contentSkills} />
+      <Divider width="80%" className="tw-my-2" />
+      <SkillsList title={titleLibraries} content={contentLibraries} />
+      <Divider width="80%" className="tw-my-2" />
+      <SkillsList title={titleSoftware} content={contentSoftware} />{" "}
+      <Divider width="80%" className="tw-my-5" />
+      <LayoutWrapperContent
+        ContentLeft={
+          <div>
+            <TimeLine title={titleEducation} timeList={timeListEducation} />
+            <Divider width="100%" className="tw-my-2" />
+            <TimeLine title={titleEducation} timeList={timeListEducation} />
+          </div>
+        }
+        ContentRight={<></>}
       />
     </MainStyled>
   );

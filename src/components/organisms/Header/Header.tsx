@@ -1,12 +1,12 @@
 import React from "react";
 
-import { HeaderProps } from "@/interfaces";
+import { headerProps } from "@/interfaces";
 import StyledHeader from "./HeaderStyled";
 import LanguageSwitcher from "@/components/molecules/LanguageSwitcher";
 import SwitchDarkMode from "@/components/molecules/SwitchDarkMode";
 import ButtonExportPDF from "@/components/molecules/ButtonExportPDF";
 
-const Header = (props: HeaderProps) => {
+const Header = (props: headerProps) => {
   const { listLanguage } = props;
   return (
     <StyledHeader className="tw-m-0.5">

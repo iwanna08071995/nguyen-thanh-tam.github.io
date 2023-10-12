@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-interface ButtonProps {
+interface buttonProps {
   children?: ReactNode;
   type?: "link" | "dashed" | "primary" | "text";
 }
 
-interface SelectProps {
+interface selectProps {
   options: Array<{
     key: number | string;
     value: string;
@@ -17,78 +17,83 @@ interface SelectProps {
   className?: string;
 }
 
-interface LanguageSwitcherProps extends Omit<SelectProps, "options"> {
+interface languageSwitcherProps extends Omit<selectProps, "options"> {
   options: string[];
 }
 
-interface HeaderProps extends Omit<LanguageSwitcherProps, "options"> {
+interface headerProps extends Omit<languageSwitcherProps, "options"> {
   listLanguage: string[];
 }
 
-interface LayoutWithHeaderFooter extends MainProps, HeaderProps {}
+interface layoutWithHeaderFooter extends mainProps, headerProps {}
 
-interface ImageProps {
+interface imageProps {
   size?: string | number;
 }
 
-interface SwitchDarkModeProps {
+interface switchDarkModeProps {
   size?: string | number;
   mode?: number;
 }
 
-interface ButtonExportPDFProps {
+interface buttonExportPDFProps {
   size?: string | number;
 }
 
-interface DividerProps {
+interface dividerProps {
   className?: string;
   width?: string | number;
   position?: "start" | "end" | "center";
 }
 
-interface AvatarProps {
+interface avatarProps {
   size?: "large" | "small" | "default" | number;
   src?: string | null;
 }
 
-interface LayoutWrapperContentProps {
+interface layoutWrapperContentProps {
   ContentLeft?: ReactNode | null;
   ContentRight?: ReactNode | null;
+  leftPosition?: string | null;
 }
 
-interface InfoProps {
+interface infoProps {
   name: string | undefined;
   job: string | undefined;
   location: string | undefined;
 }
 
-interface TitleContentProps {
+interface titleContentProps {
   title: string | undefined;
 }
 
-interface ContactProps extends TitleContentProps {
+interface contactProps extends titleContentProps {
   phone: string | undefined;
   email: string | undefined;
   website: string | undefined;
 }
 
-interface MainProps {
+interface mainProps {
   profile: {
-    avatar: AvatarProps;
+    avatar: avatarProps;
     name?: string;
     location?: string;
     job?: string;
   };
-  contact: ContactProps;
-  aboutMe: AboutMeprops;
-  skillsSummary: SkillsSummaryProps;
+  contact: contactProps;
+  aboutMe: aboutMeprops;
+  skillsSummary: skillsSummaryProps;
+  skills: skillsListProps;
+  libraries: skillsListProps;
+  software: skillsListProps;
+  education: timeLine;
 }
 
-interface AboutMeprops extends TitleContentProps {
+interface aboutMeprops extends titleContentProps {
   content: string | undefined;
 }
 
-interface SkillsSummaryProps extends TitleContentProps {
+interface skillsSummaryProps extends titleContentProps {
   content: string[] | [];
 }
 interface ListsProps {
@@ -99,24 +104,46 @@ interface checkArrayNotEmptyFunc {
   (params: any[] | undefined | string[] | []): boolean;
 }
 
+interface skillsListProps extends skillsSummaryProps {}
+
+interface timeListItem {
+  position: string;
+  time: string;
+  name: string;
+}
+
+interface timeLine extends titleContentProps {
+  timeList: timeListItem[];
+}
+
+interface showItemTimeLineFunc {
+  (params: timeListItem): ReactNode;
+}
+
+interface languagesProps {}
+
 export type {
-  LayoutWithHeaderFooter,
-  ButtonProps,
-  HeaderProps,
-  SelectProps,
-  ImageProps,
-  LanguageSwitcherProps,
-  SwitchDarkModeProps,
-  ButtonExportPDFProps,
-  DividerProps,
-  AvatarProps,
-  MainProps,
-  LayoutWrapperContentProps,
-  InfoProps,
-  TitleContentProps,
-  ContactProps,
-  AboutMeprops,
-  SkillsSummaryProps,
+  layoutWithHeaderFooter,
+  buttonProps,
+  headerProps,
+  selectProps,
+  imageProps,
+  languageSwitcherProps,
+  switchDarkModeProps,
+  buttonExportPDFProps,
+  dividerProps,
+  avatarProps,
+  mainProps,
+  layoutWrapperContentProps,
+  infoProps,
+  titleContentProps,
+  contactProps,
+  aboutMeprops,
+  skillsSummaryProps,
   ListsProps,
   checkArrayNotEmptyFunc,
+  skillsListProps,
+  timeLine,
+  showItemTimeLineFunc,
+  languagesProps,
 };

@@ -1,12 +1,12 @@
 import React from "react";
 
-import { SkillsSummaryProps } from "@/interfaces";
+import { skillsSummaryProps } from "@/interfaces";
 import TitleContent from "@/components/atoms/TitleContent";
 import Lists from "@/components/atoms/Lists";
 
 import SkillsSummaryStyled from "./SkillsSummaryStyled";
 
-function SkillsSummary(props: SkillsSummaryProps) {
+function SkillsSummary(props: skillsSummaryProps) {
   const { title, content } = props;
 
   return (
