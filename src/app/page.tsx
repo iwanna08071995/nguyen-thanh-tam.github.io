@@ -1,7 +1,8 @@
 "use client";
 import { ConfigProvider } from "antd";
 
-import layoutWithHeaderFooter from "@/components/templates/layoutWithHeaderFooter";
+import LayoutWithHeaderFooter from "@/components/templates/LayoutWithHeaderFooter";
+
 import { LIST_LANGUAGE } from "@/utils/constant";
 import {
   profile,
@@ -12,6 +13,8 @@ import {
   libraries,
   software,
   education,
+  languages,
+  experience,
 } from "@/db/data";
 
 const Home = () => {
@@ -23,7 +26,7 @@ const Home = () => {
         },
       }}
     >
-      <layoutWithHeaderFooter
+      <LayoutWithHeaderFooter
         listLanguage={LIST_LANGUAGE}
         profile={profile}
         contact={contact}
@@ -33,6 +36,8 @@ const Home = () => {
         libraries={libraries}
         software={software}
         education={education}
+        languages={languages}
+        experience={experience}
       />
     </ConfigProvider>
   );

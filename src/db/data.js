@@ -12,6 +12,7 @@ const contact = {
   phone: "081.653.8938",
   website: "https://nguyenthanhtam73.github.io/",
   email: "nguyenthanhtam08071995@gmail.com",
+  linkedIn: "https://www.linkedin.com/in/thanhftam/",
 };
 
 const aboutMe = {
@@ -33,6 +34,7 @@ const skillsSummary = {
     "Khả năng tối ưu hóa hiệu suất trang web để đảm bảo tải trang nhanh chóng và trải nghiệm người dùng mượt mà.",
     "Thái độ làm việc tốt, luôn học hỏi và cập nhật với các xu hướng và phương pháp tốt nhất mới nhất trong ngành.",
     "Khả năng làm việc với nhóm tốt, bao gồm mọi thành viên trong nhóm, cấp trên và khách hàng",
+    "Phát triển sản phẩm theo phương pháp Agile/Scrum",
   ],
 };
 
@@ -49,7 +51,7 @@ const skills = {
     "SQL Database",
     "GraphQL",
     "SVG",
-    "Canvas",
+    "RESTful API",
   ],
 };
 
@@ -71,6 +73,12 @@ const libraries = {
     "Ant Design",
     "Webpack",
     "PhantomJS",
+    "Axios",
+    "Vite",
+    "Storybook",
+    "Lodash",
+    "Konva.js",
+    "Redux (Redux-thunk)",
   ],
 };
 const software = {
@@ -85,6 +93,7 @@ const software = {
     "Node package manager",
     "Trello",
     "Jira",
+    "draw.io",
   ],
 };
 
@@ -93,17 +102,69 @@ const education = {
   timeList: [
     {
       position: "Sinh viên",
-      time: "8/2014 – 06/2018",
-      name: "Trường Đại học Tây Nguyên",
+      time: "8/2013 - 09/2017",
+      name: "Trường đại học Tây Nguyên",
     },
   ],
 };
 
 const languages = {
   title: "LANGUAGES",
-  content: [
+  list: [
     { lang: "English", level: "Communication" },
-    { lang: "vietnamese", level: "Native" },
+    { lang: "Vietnamese", level: "Native" },
+  ],
+};
+
+const experience = {
+  title: "EXPERIENCE",
+  timeList: [
+    {
+      time: "09/2022 - Present",
+      company: "FCS Computer Systems",
+      position: "Front End Developer",
+      project: [
+        {
+          name: "fcs1hotel",
+          teamSize:
+            "4 Front End, 4 Mobile, 5 Back End, 2 Quality Assurance (QA), 1 Designer 1 Team Leader",
+          description:
+            "Hệ thống quản lý tài sản khách sạn (Property Management System Hotel – PMS Hotel) giúp các khách sạn tổ chức, lập kế hoạch và quản lý toàn bộ hoạt động hàng ngày tại khách sạn một cách hiệu quả, xử lý các quy trình, tác vụ công việc như đặt phòng, nhận phòng, trả phòng, chỉ định phòng, dọn dẹp hay thanh toán…",
+          technologies:
+            "Atomic design pattern, React-boilerplate, ReactJS, SCSS, Tailwind CSS, LeafletJS, Webpack, Axios, Lodash, html2pdf",
+          responsibilities: [
+            "Thiết kế và phát triển giao diện người dùng các trang quản lý kho, trạng thái, tài sản phòng, bản đồ phòng, dịch vụ khách sạn, quản lý và giao việc cho nhân viên, xuất báo cáo, quản lý và phân quyền người dùng.",
+            "Làm việc và tích hợp API của Backend",
+            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn.",
+            "Áp dụng và sử dụng những thư viện, công nghệ mới phục vụ dự án",
+            "Cải thiện trải nghiệm người dùng",
+          ],
+        },
+      ],
+    },
+    {
+      time: "11/2020 - 08/2022",
+      company: "Vitalify Asia",
+      position: "Front End Developer",
+      project: [
+        {
+          name: "Miroku Genius",
+          teamSize:
+            "5 Front End, 2 Back End, 1 Bridge System Engineer (BrSE), 1 Team Leader",
+          description: "Report Builder tạo và thiết kế báo cáo",
+          technologies:
+            "Atomic design pattern, React-boilerplate, ReactJS, SCSS, Tailwind CSS, LeafletJS, Webpack, Axios, Lodash, html2pdf",
+          responsibilities: [
+            "Thiết kế và phát triển giao diện người dùng các trang : quản lý kho, trạng thái, tài sản phòng, bản đồ phòng, dịch vụ khách sạn, quản lý và giao việc cho nhân viên, xuất báo cáo, quản lý và phân quyền người dùng.",
+            "Tích hợp API của Backend",
+            "Viết tạo mới những Component, Function để tái sử dụng",
+            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn.",
+            "Áp dụng và sử dụng những thư viện, công nghệ mới",
+            "Cải thiện Trải nghiệm người dùng",
+          ],
+        },
+      ],
+    },
   ],
 };
 
@@ -117,4 +178,5 @@ export {
   software,
   education,
   languages,
+  experience,
 };
