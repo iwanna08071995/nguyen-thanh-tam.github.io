@@ -4,7 +4,12 @@ import Divider from "@/components/atoms/Divider";
 import { layoutWrapperContentProps } from "@/interfaces";
 
 function LayoutWrapperContent(props: layoutWrapperContentProps) {
-  const { ContentLeft, ContentRight, leftPosition = "left" } = props;
+  const {
+    ContentLeft,
+    ContentRight,
+    leftPosition = "left",
+    rightPosition = "center",
+  } = props;
 
   const showContentLeft = () => {
     if (ContentLeft) {
@@ -29,7 +34,9 @@ function LayoutWrapperContent(props: layoutWrapperContentProps) {
         <Divider width="80%" />
       </div>
       <div className="tw-flex tw-flex-col	tw-w-7/12 tw-gap-5">
-        <div className="tw-flex tw-flex-col tw-justify-center tw-h-full tw-items-start">
+        <div
+          className={`tw-flex tw-flex-col tw-justify-${rightPosition} tw-h-full tw-items-start`}
+        >
           {showContentRight()}
         </div>
         <Divider width="80%" position="start" />

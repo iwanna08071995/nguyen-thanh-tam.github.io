@@ -55,6 +55,7 @@ interface layoutWrapperContentProps {
   ContentLeft?: ReactNode | null;
   ContentRight?: ReactNode | null;
   leftPosition?: string | null;
+  rightPosition?: string | null;
 }
 
 interface infoProps {
@@ -71,6 +72,7 @@ interface contactProps extends titleContentProps {
   phone: string | undefined;
   email: string | undefined;
   website: string | undefined;
+  linkedIn: string | undefined;
 }
 
 interface mainProps {
@@ -86,7 +88,9 @@ interface mainProps {
   skills: skillsListProps;
   libraries: skillsListProps;
   software: skillsListProps;
-  education: timeLine;
+  education: timeLineProps;
+  languages: languagesProps;
+  experience: experienceProps;
 }
 
 interface aboutMeprops extends titleContentProps {
@@ -97,7 +101,13 @@ interface skillsSummaryProps extends titleContentProps {
   content: string[] | [];
 }
 interface ListsProps {
+  type?: "disc" | "circle";
   content: string[] | [];
+  className?: string;
+}
+
+interface listsStyledProps {
+  type: string;
 }
 
 interface checkArrayNotEmptyFunc {
@@ -107,20 +117,51 @@ interface checkArrayNotEmptyFunc {
 interface skillsListProps extends skillsSummaryProps {}
 
 interface timeListItem {
-  position: string;
-  time: string;
-  name: string;
+  position?: string;
+  time?: string;
+  name?: string;
+  company?: string;
+  project?: object[];
 }
 
-interface timeLine extends titleContentProps {
+interface listItemTimeLineFunc {
+  (params: timeListItem): ReactNode | Function | null | void;
+}
+
+interface timeLineProps extends titleContentProps {
+  timeList: timeListItem[];
+  isExperience?: boolean;
+}
+
+interface listLanguagesProps {
+  lang: string;
+  level: string;
+}
+
+interface languagesProps {
+  title: string;
+  list: listLanguagesProps[];
+}
+
+interface experienceProps extends titleContentProps {
   timeList: timeListItem[];
 }
 
-interface showItemTimeLineFunc {
-  (params: timeListItem): ReactNode;
+interface listProjectFunc {
+  (params: object[]): ReactNode;
 }
 
-interface languagesProps {}
+interface projectExperienceProps {
+  name?: string;
+  teamSize?: string;
+  description?: string;
+  technologies?: string;
+  responsibilities?: string[] | [];
+}
+
+interface descriptionJobFunc {
+  (title?: string | null, content?: string | null | ReactNode): ReactNode;
+}
 
 export type {
   layoutWithHeaderFooter,
@@ -143,7 +184,13 @@ export type {
   ListsProps,
   checkArrayNotEmptyFunc,
   skillsListProps,
-  timeLine,
-  showItemTimeLineFunc,
+  timeLineProps,
+  listItemTimeLineFunc,
   languagesProps,
+  listLanguagesProps,
+  experienceProps,
+  listProjectFunc,
+  projectExperienceProps,
+  descriptionJobFunc,
+  listsStyledProps,
 };

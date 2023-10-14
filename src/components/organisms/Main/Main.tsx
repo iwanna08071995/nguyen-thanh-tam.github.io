@@ -12,6 +12,7 @@ import { mainProps } from "@/interfaces";
 import TimeLine from "@/components/molecules/TimeLine";
 
 import MainStyled from "./MainStyled";
+import Languages from "@/components/molecules/Languages";
 
 function Main(props: mainProps) {
   const {
@@ -21,13 +22,15 @@ function Main(props: mainProps) {
       job,
       location,
     },
-    contact: { website, phone, title: titleContact, email },
+    contact: { website, phone, title: titleContact, email, linkedIn },
     aboutMe: { content: contentAboutMe, title: titleAboutMe },
     skillsSummary: { title: titleSkillsSummary, content: contentSkillsSummary },
     skills: { title: titleSkills, content: contentSkills },
     libraries: { title: titleLibraries, content: contentLibraries },
     software: { title: titleSoftware, content: contentSoftware },
     education: { title: titleEducation, timeList: timeListEducation },
+    languages: { title: titleLanguages, list: listLanguages },
+    experience: { title: titleExperience, timeList: listExperience },
   } = props;
 
   return (
@@ -46,6 +49,7 @@ function Main(props: mainProps) {
             phone={phone}
             title={titleContact}
             email={email}
+            linkedIn={linkedIn}
           />
         }
         ContentRight={<AboutMe title={titleAboutMe} content={contentAboutMe} />}
@@ -62,14 +66,21 @@ function Main(props: mainProps) {
       <SkillsList title={titleSoftware} content={contentSoftware} />{" "}
       <Divider width="80%" className="tw-my-5" />
       <LayoutWrapperContent
+        rightPosition="start"
         ContentLeft={
           <div>
             <TimeLine title={titleEducation} timeList={timeListEducation} />
             <Divider width="100%" className="tw-my-2" />
-            <TimeLine title={titleEducation} timeList={timeListEducation} />
+            <Languages title={titleLanguages} list={listLanguages} />
           </div>
         }
-        ContentRight={<></>}
+        ContentRight={
+          <TimeLine
+            isExperience={true}
+            title={titleExperience}
+            timeList={listExperience}
+          />
+        }
       />
     </MainStyled>
   );

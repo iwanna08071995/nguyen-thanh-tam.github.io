@@ -1,6 +1,4 @@
 import Header from "../organisms/Header";
-import Divider from "../atoms/Divider";
-// import Footer from "../../organisms/Footer";
 import Main from "../organisms/Main";
 
 import { layoutWithHeaderFooter } from "@/interfaces";
@@ -16,6 +14,8 @@ const layoutWithHeaderFooter = (props: layoutWithHeaderFooter) => {
     libraries,
     software,
     education,
+    languages,
+    experience,
   } = props;
   return (
     <div className={`tw-flex tw-flex-col tw-min-h-screen tw-px-4 `}>
@@ -29,6 +29,8 @@ const layoutWithHeaderFooter = (props: layoutWithHeaderFooter) => {
         libraries={libraries}
         software={software}
         education={education}
+        languages={languages}
+        experience={experience}
       />
       <div className="tw-h-8" />
     </div>

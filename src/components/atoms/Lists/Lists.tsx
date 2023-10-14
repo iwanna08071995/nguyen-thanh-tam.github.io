@@ -6,7 +6,7 @@ import { ListsProps } from "@/interfaces";
 import ListsStyled from "./ListsStyled";
 
 const Lists = (props: ListsProps) => {
-  const { content } = props;
+  const { content, type = "disc", className = "" } = props;
 
   const showLists = () => {
     if (checkArrayNotEmpty(content)) {
@@ -24,7 +24,11 @@ const Lists = (props: ListsProps) => {
     }
   };
 
-  return <ListsStyled className="tw-list-disc">{showLists()}</ListsStyled>;
+  return (
+    <ListsStyled className={`${className}`} type={type}>
+      {showLists()}
+    </ListsStyled>
+  );
 };
 
 export default Lists;

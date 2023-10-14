@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
-const ListsStyled = styled.ul``;
+import { listsStyledProps } from "@/interfaces";
+
+const ListsStyled = styled.ul<listsStyledProps>`
+  list-style-type: ${(props) => props.type};
+`;
 
 export default ListsStyled;
