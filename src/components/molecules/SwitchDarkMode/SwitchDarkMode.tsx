@@ -1,7 +1,7 @@
 import React from "react";
 import { CiLight, CiDark } from "react-icons/ci";
 
-import { SwitchDarkModeProps } from "@/interfaces";
+import { switchDarkModeProps } from "@/interfaces";
 import { LIST_MODE_DARK_LIGHT } from "@/utils/constant";
 
 import SwitchDarkModeStyled from "./SwitchDarkModeStyled";
@@ -9,7 +9,7 @@ import Button from "@/components/atoms/Button";
 
 const { DARK, LIGHT } = LIST_MODE_DARK_LIGHT;
 
-function SwitchDarkMode(props: SwitchDarkModeProps) {
+function SwitchDarkMode(props: switchDarkModeProps) {
   const { size = "1.6rem", mode = LIGHT } = props;
 
   const checkShowModeSystem = () => {

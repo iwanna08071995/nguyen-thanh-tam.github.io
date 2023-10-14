@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import { DividerProps } from "@/interfaces";
+import { dividerProps } from "@/interfaces";
 
-const DividerStyled = styled.div<DividerProps>`
+const DividerStyled = styled.div<dividerProps>`
   hr {
     border-top: solid #ccc 1px;
     width: ${(props) => (props.width ? props.width : "100%")};

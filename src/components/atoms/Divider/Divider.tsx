@@ -1,10 +1,10 @@
 import React from "react";
 
-import { DividerProps } from "@/interfaces";
+import { dividerProps } from "@/interfaces";
 
 import DividerStyled from "./DividerStyled";
 
-function Divider(props: DividerProps) {
+function Divider(props: dividerProps) {
   const { className, width = "100%", position = "center" } = props;
   return (
     <DividerStyled

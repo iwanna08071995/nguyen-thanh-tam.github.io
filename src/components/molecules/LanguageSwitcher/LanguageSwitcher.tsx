@@ -1,13 +1,13 @@
 import React from "react";
 
 import Select from "../../atoms/Select";
-import { LanguageSwitcherProps } from "@/interfaces";
+import { languageSwitcherProps } from "@/interfaces";
 import { FlagVi, FlagEn } from "@/components/atoms/Image";
 import { checkArrayNotEmpty } from "@/utils/helpers";
 
 import LanguageSwitcherStyled from "./LanguageSwitcherStyled";
 
-function LanguageSwitcher(props: LanguageSwitcherProps) {
+function LanguageSwitcher(props: languageSwitcherProps) {
   const { options } = props;
 
   const checkShowFlag = (key: string) => {
