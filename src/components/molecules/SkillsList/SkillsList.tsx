@@ -21,9 +21,7 @@ function SkillsList(props: skillsListProps) {
 
   return (
     <SkillsListStyled>
-      <div className="tw-mb-4">
-        <TitleContent title={title} />
-      </div>
+      <TitleContent title={title} />
       <div className="tw-flex tw-gap-2">- {showLists()}</div>
     </SkillsListStyled>
   );

@@ -18,9 +18,7 @@ function Contact(props: contactProps) {
   } = props;
   return (
     <ContactStyled>
-      <div className="tw-mb-4">
-        <TitleContent title={title} />
-      </div>
+      <TitleContent title={title} />
       <div className="tw-mt-4 tw-grid grid-view-col tw-gap-3 tw-items-center">
         <TfiEmail size={SIZE_ICON_DEFAULT} />
         <span>{email}</span>

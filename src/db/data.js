@@ -9,10 +9,11 @@ const profile = {
 
 const contact = {
   title: "CONTACT",
-  phone: "081.653.8938",
+  phone: "(+84) 81.653.8938",
   website: "https://nguyenthanhtam73.github.io/",
   email: "nguyenthanhtam08071995@gmail.com",
   linkedIn: "https://www.linkedin.com/in/thanhftam/",
+  facebook: "https://www.facebook.com/ThanhfTam",
 };
 
 const aboutMe = {
@@ -64,7 +65,7 @@ const libraries = {
     "jQuery",
     "React",
     "NextJS",
-    "Vue",
+    "VueJS",
     "Quasar framework",
     "WordPress",
     "Laravel",
@@ -79,6 +80,11 @@ const libraries = {
     "Lodash",
     "Konva.js",
     "Redux (Redux-thunk)",
+    "i18n",
+    "JavaScript testing",
+    "ESLint",
+    "Prettier",
+    "PostCSS",
   ],
 };
 const software = {
@@ -127,17 +133,18 @@ const experience = {
         {
           name: "fcs1hotel",
           teamSize:
-            "4 Front End, 4 Mobile, 5 Back End, 2 Quality Assurance (QA), 1 Designer 1 Team Leader",
+            "4 Front End, 4 Mobile, 5 Back End, 2 Quality Assurance (QA), 1 Designer, 1 Team Leader",
           description:
-            "Hệ thống quản lý tài sản khách sạn (Property Management System Hotel – PMS Hotel) giúp các khách sạn tổ chức, lập kế hoạch và quản lý toàn bộ hoạt động hàng ngày tại khách sạn một cách hiệu quả, xử lý các quy trình, tác vụ công việc như đặt phòng, nhận phòng, trả phòng, chỉ định phòng, dọn dẹp hay thanh toán…",
+            "Hệ thống quản lý tài sản khách sạn (Property Management System Hotel – PMS Hotel) giúp các khách sạn tổ chức, lập kế hoạch và quản lý toàn bộ hoạt động hàng ngày tại khách sạn một cách hiệu quả, xử lý các quy trình, tác vụ công việc như đặt phòng, nhận phòng, trả phòng, chỉ định phòng, thời gian lưu trú, dọn dẹp hay thanh toán ...",
           technologies:
-            "Atomic design pattern, React-boilerplate, ReactJS, SCSS, Tailwind CSS, LeafletJS, Webpack, Axios, Lodash, html2pdf",
+            "Atomic design pattern, React-boilerplate, ReactJS, SCSS, i18n, Tailwind CSS, LeafletJS, Webpack, Axios, Lodash, html2pdf, ESLint",
           responsibilities: [
             "Thiết kế và phát triển giao diện người dùng các trang quản lý kho, trạng thái, tài sản phòng, bản đồ phòng, dịch vụ khách sạn, quản lý và giao việc cho nhân viên, xuất báo cáo, quản lý và phân quyền người dùng.",
-            "Làm việc và tích hợp API của Backend",
-            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn.",
+            "Tích hợp đa ngôn ngữ",
+            "Làm việc và tích hợp API của Back End",
             "Áp dụng và sử dụng những thư viện, công nghệ mới phục vụ dự án",
             "Cải thiện trải nghiệm người dùng",
+            "Thiết kế và phát triển những UI Components",
           ],
         },
       ],
@@ -150,17 +157,117 @@ const experience = {
         {
           name: "Miroku Genius",
           teamSize:
-            "5 Front End, 2 Back End, 1 Bridge System Engineer (BrSE), 1 Team Leader",
-          description: "Report Builder tạo và thiết kế báo cáo",
+            "5 Front End, 2 Back End, 1 Bridge System Engineer (BrSE), 2 Team Leader",
+          description: "Website tạo mẫu báo cáo",
           technologies:
-            "Atomic design pattern, React-boilerplate, ReactJS, SCSS, Tailwind CSS, LeafletJS, Webpack, Axios, Lodash, html2pdf",
+            "Atomic design pattern, ReactJS, TypeScript, Styled-component, Konva.js, canvas, Tailwind CSS, storybook, Context API, draw.io, ESLint",
           responsibilities: [
-            "Thiết kế và phát triển giao diện người dùng các trang : quản lý kho, trạng thái, tài sản phòng, bản đồ phòng, dịch vụ khách sạn, quản lý và giao việc cho nhân viên, xuất báo cáo, quản lý và phân quyền người dùng.",
-            "Tích hợp API của Backend",
-            "Viết tạo mới những Component, Function để tái sử dụng",
-            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn.",
+            "Làm việc với vai trò trưởng nhóm",
+            "Xác định yêu cầu dự án và chọn công nghệ, thư viện sử dụng",
+            "Thiết lập và triển khai môi trường phát triển dự án",
+            "Thiết kế và phát triển giao diện người dùng bao gồm các nhãn, trường nhập liệu, sao lưu mẫu báo cáo, hoàn tác hoạt động, sao chép và dán ...",
+            "Làm việc và tích hợp API của Back End",
+            "Thiết kế và phát triển những UI Components",
+            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn",
             "Áp dụng và sử dụng những thư viện, công nghệ mới",
-            "Cải thiện Trải nghiệm người dùng",
+            "Cải thiện trải nghiệm người dùng",
+            "Viết tài liệu dự án SRS (Software Requirement Specification), Data Flow, UI/UX",
+          ],
+        },
+        {
+          name: "OMRON HEALTHCARE Co.,Ltd",
+          teamSize: "1 Front End, 2 Back End, 1 Bridge System Engineer (BrSE)",
+          description:
+            "Website quản lý và cung cấp thông tin y tế của người dùng cho chuyên gia y tế hoặc người quản lý thông tin sức khỏe.",
+          technologies:
+            "ReactJS, React Native, react-native-webview, Nestjs, Laravel PHP, Mysql, ESLint",
+          responsibilities: [
+            "Thiết kế và phát triển giao diện người dùng bao gồm các thông tin sức khỏe người dùng theo thời gian, lịch uống thuốc, lời khuyên và tư ván của người quản lý thông tin sức khỏe, kênh trò chuyện nội bộ, đặt lịch thăm khám, kiểm tra sức khỏe ...",
+            "Tích hợp API của Back End",
+            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn",
+            "Cải thiện trải nghiệm người dùng",
+            "Thiết kế và phát triển những UI Components",
+          ],
+        },
+        {
+          name: "Oyatsu Town",
+          teamSize:
+            "2 Front End, 3 Back End, 1 Designer, 1 Bridge System Engineer (BrSE), 1 Team Leader",
+          description:
+            "Website quản lý và cung cấp thông tin, vé cho khách hàng tham gia công viên và khu vui chơi giải trí",
+          technologies:
+            "VueJS, Quasar framework, SCSS, Quasar Style CSS, Tailwind CSS, NestJS, Graphql, Lodash, LinePay, i18n, ESLint",
+          responsibilities: [
+            "Thiết kế và phát triển giao diện người dùng bao gồm các trang tạo vé, thông tin và dịch vụ, sự kiện, lịch, thanh toán, mã QR, xuất và in vé, quản lý và phân quyền người dùng ...",
+            "Tích hợp API của Back End",
+            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn",
+            "Tích hợp đa ngôn ngữ",
+            "Cải thiện trải nghiệm người dùng",
+            "Thiết kế và phát triển những UI Components",
+          ],
+        },
+      ],
+    },
+    {
+      time: "09/2019 - 10/2020",
+      company: "PIKSAL JSC",
+      position: "Front End Developer",
+      project: [
+        {
+          name: "LORA - Học cùng bé",
+          teamSize: "2 Front End, 2 Back End, 1 Designer, 1 Team Leader",
+          description:
+            "Website cung cấp chương trình học Toán, Tiếng Anh và Khoa Học trực tuyến dành cho trẻ từ 5 đến 10 tuổi",
+          technologies:
+            "ReactJS, Redux, React UI Component Libraries ( Ant Design ), SCSS, Bootstrap, Styled-component, Webpack, BankPay, i18n, Chess.js, ESLint",
+          responsibilities: [
+            "Làm việc với vai trò trưởng nhóm",
+            "Xác định yêu cầu dự án và chọn công nghệ, thư viện sử dụng",
+            "Thiết lập và triển khai môi trường phát triển dự án",
+            "Thiết kế và phát triển giao diện người dùng bao gồm các khóa học như toán, tiếng Anh, khoa học, cờ vua. Lịch sử và thời gian tham gia học. Đăng ký, đăng nhập, thông tin người dùng. Mua khóa học trực tuyến",
+            "Làm việc và tích hợp API của Back End",
+            "Thiết kế và phát triển những UI Components",
+            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn",
+            "Áp dụng và sử dụng những thư viện, công nghệ mới",
+            "Cải thiện trải nghiệm người dùng",
+            "Tích hợp đa ngôn ngữ với những khóa học tiếng Anh",
+          ],
+        },
+        {
+          name: "Cloud Spa",
+          teamSize: "1 Front End, 1 Back End, 1 Designer, 1 Team Leader",
+          description: "Website Quản Lý Spa Online",
+          technologies:
+            "ReactJS, Redux, React UI Component Libraries ( Ant Design ), SCSS, Bootstrap, Styled-component, Webpack, ESLint",
+          responsibilities: [
+            "Thiết kế và phát triển giao diện người dùng bao gồm các trang quản lý chi nhánh, nhân viên, dịch vụ, mã giảm giá, thông tin khách hàng, lịch sử dùng dịch vụ. Sản phẩm có thể bán. Thu nhập của chi nhánh, nhân viên theo thời gian",
+            "Tích hợp API của Back End",
+            "Cải thiện trải nghiệm người dùng",
+            "Thiết kế và phát triển những UI Components",
+          ],
+        },
+      ],
+    },
+    {
+      time: "11/2017 - 10/2019",
+      company: "TicketSoft | GiiG",
+      position: "Front End Developer",
+      project: [
+        {
+          name: "GiiG Asia",
+          teamSize:
+            "2 Front End, 1 Back End, 1 Designer, 1 Quality Control (QC), 1 Project Manager (PM)",
+          description:
+            "Website tìm kiếm và kết nối giữa các thương hiệu, doanh nghiệp với những người nổi tiếng, có sức ảnh hưởng lớn hoạt động nhiều trên các nền tảng mạng xã hội.",
+          technologies:
+            "ReactJS, MobX, React UI Component Libraries ( Grommet ), CSS, Bootstrap, Webpack, ESLint",
+          responsibilities: [
+            "Thiết kế và phát triển giao diện người dùng bao gồm các trang đăng ký, đăng nhập. Quản lý thông tin tài khoản. Tạo bài viết, chiến dịch bên phía thương hiệu, doanh nghiệp. Tìm kiếm bài viết, chiến dịch đã tạo. Tìm kiếm người nổi tiếng.",
+            "Làm việc và tích hợp API của Back End",
+            "Thiết kế và phát triển những UI Components",
+            "Áp dụng và sử dụng những thư viện, công nghệ mới",
+            "Cải thiện trải nghiệm người dùng",
+            "Tích hợp đa ngôn ngữ",
           ],
         },
       ],

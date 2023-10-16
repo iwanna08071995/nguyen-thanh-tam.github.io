@@ -11,9 +11,7 @@ function SkillsSummary(props: skillsSummaryProps) {
 
   return (
     <SkillsSummaryStyled>
-      <div className="tw-mb-4">
-        <TitleContent title={title} />
-      </div>
+      <TitleContent title={title} />
       <Lists content={content} />
     </SkillsSummaryStyled>
   );
