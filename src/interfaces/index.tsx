@@ -42,7 +42,7 @@ interface buttonExportPDFProps {
 
 interface dividerProps {
   className?: string;
-  width?: string | number;
+  width?: string;
   position?: "start" | "end" | "center";
 }
 
@@ -163,6 +163,14 @@ interface descriptionJobFunc {
   (title?: string | null, content?: string | null | ReactNode): ReactNode;
 }
 
+interface handleSetWidthFunc {
+  (): void;
+}
+
+interface handleSetLeftPositionFunc {
+  (): void;
+}
+
 export type {
   layoutWithHeaderFooter,
   buttonProps,
@@ -193,4 +201,6 @@ export type {
   projectExperienceProps,
   descriptionJobFunc,
   listsStyledProps,
+  handleSetWidthFunc,
+  handleSetLeftPositionFunc,
 };

@@ -20,4 +20,11 @@ const checkArrayNotEmpty: checkArrayNotEmptyFunc = (params) => {
   return true;
 };
 
-export { checkArrayNotEmpty };
+function isWindowSize1024(): boolean {
+  // Get the current window width
+  const windowWidth: number = window.innerWidth;
+
+  // Check if the window width is less than 1024px
+  return windowWidth < 1024;
+}
+export { checkArrayNotEmpty, isWindowSize1024 };

@@ -27,9 +27,7 @@ function Languages(props: languagesProps) {
   };
   return (
     <LanguagesStyled>
-      <div className="tw-mb-4">
-        <TitleContent title={title} />
-      </div>
+      <TitleContent title={title} />
       {showList()}
     </LanguagesStyled>
   );

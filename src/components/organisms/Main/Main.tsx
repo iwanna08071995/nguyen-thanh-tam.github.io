@@ -43,7 +43,7 @@ function Main(props: mainProps) {
         ContentRight={<Info name={name} job={job} location={location} />}
       />
       <LayoutWrapperContent
-        ContentLeft={
+        ContentRight={
           <Contact
             website={website}
             phone={phone}
@@ -52,19 +52,8 @@ function Main(props: mainProps) {
             linkedIn={linkedIn}
           />
         }
-        ContentRight={<AboutMe title={titleAboutMe} content={contentAboutMe} />}
+        ContentLeft={<AboutMe title={titleAboutMe} content={contentAboutMe} />}
       />
-      <SkillsSummary
-        title={titleSkillsSummary}
-        content={contentSkillsSummary}
-      />
-      <Divider width="80%" className="tw-my-5" />
-      <SkillsList title={titleSkills} content={contentSkills} />
-      <Divider width="80%" className="tw-my-2" />
-      <SkillsList title={titleLibraries} content={contentLibraries} />
-      <Divider width="80%" className="tw-my-2" />
-      <SkillsList title={titleSoftware} content={contentSoftware} />{" "}
-      <Divider width="80%" className="tw-my-5" />
       <LayoutWrapperContent
         rightPosition="start"
         ContentLeft={
@@ -75,12 +64,22 @@ function Main(props: mainProps) {
           </div>
         }
         ContentRight={
-          <TimeLine
-            isExperience={true}
-            title={titleExperience}
-            timeList={listExperience}
+          <SkillsSummary
+            title={titleSkillsSummary}
+            content={contentSkillsSummary}
           />
         }
+      />
+      <SkillsList title={titleSkills} content={contentSkills} />
+      <Divider width="80%" className="tw-my-2" />
+      <SkillsList title={titleLibraries} content={contentLibraries} />
+      <Divider width="80%" className="tw-my-2" />
+      <SkillsList title={titleSoftware} content={contentSoftware} />{" "}
+      <Divider width="80%" className="tw-my-5" />
+      <TimeLine
+        isExperience={true}
+        title={titleExperience}
+        timeList={listExperience}
       />
     </MainStyled>
   );

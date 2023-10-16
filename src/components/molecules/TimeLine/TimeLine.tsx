@@ -60,12 +60,7 @@ function TimeLine(props: timeLineProps) {
   };
 
   const showItemExperience: listItemTimeLineFunc = (params) => {
-    const {
-      time,
-      company,
-      position,
-      project, //: { name, teamSize, description, technologies, responsibilities },
-    } = params;
+    const { time, company, position, project } = params;
 
     return (
       <div className="tw-flex tw-flex-col">
@@ -106,7 +101,7 @@ function TimeLine(props: timeLineProps) {
 
     if (checkArrayNotEmpty(timeList)) {
       timeList.map((value, index) => {
-        if (index < timeList.length - 1) {
+        if (index === 0 && timeList.length > 1) {
           list.push({
             key: index,
             color: "black",
@@ -128,9 +123,7 @@ function TimeLine(props: timeLineProps) {
 
   return (
     <TimeLineStyled className="tw-w-full">
-      <div className="tw-mb-4">
-        <TitleContent title={title} />
-      </div>
+      <TitleContent title={title} />
       <TimelineAnt items={handleShowList()} />
     </TimeLineStyled>
   );

@@ -32,8 +32,6 @@ function LanguageSwitcher(props: languageSwitcherProps) {
         };
       });
 
-      console.log("list", list);
-
       return list;
     }
 

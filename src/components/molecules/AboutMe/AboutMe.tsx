@@ -9,9 +9,7 @@ function AboutMe(props: aboutMeprops) {
   const { title, content } = props;
   return (
     <AboutMeStyled>
-      <div className="tw-mb-4">
-        <TitleContent title={title} />
-      </div>
+      <TitleContent title={title} />
       <span>{content}</span>
     </AboutMeStyled>
   );
