@@ -19,15 +19,21 @@ function Contact(props: contactProps) {
   return (
     <ContactStyled>
       <TitleContent title={title} />
-      <div className="tw-mt-4 tw-grid grid-view-col tw-gap-3 tw-items-center">
-        <TfiEmail size={SIZE_ICON_DEFAULT} />
-        <span>{email}</span>
-        <BsTelephone size={SIZE_ICON_DEFAULT} />
-        <span>{phone}</span>
-        <TfiWorld size={SIZE_ICON_DEFAULT} />
-        <span>{website}</span>
-        <TfiLinkedin size={SIZE_ICON_DEFAULT} />
-        <span>{linkedIn}</span>
+      <div className="tw-mt-4 sm:tw-grid grid-view-col tw-flex tw-flex-col tw-gap-3 tw-items-center">
+        <TfiEmail className="sm:tw-flex tw-hidden" size={SIZE_ICON_DEFAULT} />
+        <span className="tw-text-base sm:tw-text-lg">{email}</span>
+        <BsTelephone
+          className="sm:tw-flex tw-hidden"
+          size={SIZE_ICON_DEFAULT}
+        />
+        <span className="tw-text-base sm:tw-text-lg">{phone}</span>
+        <TfiWorld className="sm:tw-flex tw-hidden" size={SIZE_ICON_DEFAULT} />
+        <span className="tw-text-base sm:tw-text-lg">{website}</span>
+        <TfiLinkedin
+          className="sm:tw-flex tw-hidden"
+          size={SIZE_ICON_DEFAULT}
+        />
+        <span className="tw-text-base sm:tw-text-lg">{linkedIn}</span>
       </div>
     </ContactStyled>
   );

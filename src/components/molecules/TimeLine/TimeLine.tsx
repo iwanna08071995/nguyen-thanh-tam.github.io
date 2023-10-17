@@ -64,7 +64,7 @@ function TimeLine(props: timeLineProps) {
 
     return (
       <div className="tw-flex tw-flex-col">
-        <div className="tw-flex tw-flex-row">
+        <div className="tw-flex tw-flex-col sm:tw-flex-row">
           <span className="tw-font-bold tw-mr-2">Công ty:</span>
           <span className="tw-text-xl tw-mr-2">{company}</span>
           <span>

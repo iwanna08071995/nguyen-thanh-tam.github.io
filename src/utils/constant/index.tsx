@@ -1,4 +1,9 @@
 const LIST_LANGUAGE = ["en", "vi"];
+const LANGUAGES = {
+  EN: "en",
+  VI: "vi",
+};
+
 const LIST_MODE_DARK_LIGHT = {
   DARK: 0,
   LIGHT: 1,
@@ -13,4 +18,5 @@ export {
   LIST_MODE_DARK_LIGHT,
   SIZE_ICON_DEFAULT,
   SIZE_DIVIDER_DEFAULT,
+  LANGUAGES,
 };

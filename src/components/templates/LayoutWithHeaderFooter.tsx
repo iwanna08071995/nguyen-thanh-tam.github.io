@@ -1,7 +1,10 @@
 import Header from "../organisms/Header";
 import Main from "../organisms/Main";
 
-import { layoutWithHeaderFooter } from "@/interfaces";
+import {
+  layoutWithHeaderFooter,
+  handleOnChangeLanguageFunc,
+} from "@/interfaces";
 
 const layoutWithHeaderFooter = (props: layoutWithHeaderFooter) => {
   const {
@@ -16,10 +19,21 @@ const layoutWithHeaderFooter = (props: layoutWithHeaderFooter) => {
     education,
     languages,
     experience,
+    onChangeLanguage,
   } = props;
+
+  const handleOchangeLanguage: handleOnChangeLanguageFunc = (lang) => {
+    if (onChangeLanguage) {
+      onChangeLanguage(lang);
+    }
+  };
+
   return (
     <div className={`tw-flex tw-flex-col tw-min-h-screen tw-px-4 `}>
-      <Header listLanguage={listLanguage} />
+      <Header
+        listLanguage={listLanguage}
+        onChangeLanguage={handleOchangeLanguage}
+      />
       <Main
         profile={profile}
         contact={contact}
