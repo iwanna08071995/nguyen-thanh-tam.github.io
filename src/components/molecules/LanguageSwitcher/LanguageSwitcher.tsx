@@ -1,21 +1,26 @@
 import React from "react";
 
 import Select from "../../atoms/Select";
-import { languageSwitcherProps } from "@/interfaces";
 import { FlagVi, FlagEn } from "@/components/atoms/Image";
 import { checkArrayNotEmpty } from "@/utils/helpers";
+import { LANGUAGES } from "@/utils/constant";
+import {
+  languageSwitcherProps,
+  handleOnChangeLanguageFunc,
+} from "@/interfaces";
 
 import LanguageSwitcherStyled from "./LanguageSwitcherStyled";
 
+const { EN, VI } = LANGUAGES;
+
 function LanguageSwitcher(props: languageSwitcherProps) {
-  const { options } = props;
+  const { options, onChange } = props;
 
   const checkShowFlag = (key: string) => {
     switch (key) {
-      case "vi":
+      case VI:
         return <FlagVi size={32} />;
-
-      case "en":
+      case EN:
         return <FlagEn size={32} />;
       default:
         break;
@@ -46,12 +51,19 @@ function LanguageSwitcher(props: languageSwitcherProps) {
     return "";
   };
 
+  const handleOnChange: handleOnChangeLanguageFunc = (lang) => {
+    if (onChange) {
+      onChange(lang);
+    }
+  };
+
   return (
     <LanguageSwitcherStyled className="tw-flex">
       <Select
         className="tw-w-16"
         options={handleShowListOptions()}
         defaultValue={handleShowDefaultValue()}
+        onChange={handleOnChange}
       />
     </LanguageSwitcherStyled>
   );

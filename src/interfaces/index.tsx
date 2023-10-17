@@ -17,12 +17,17 @@ interface selectProps {
   className?: string;
 }
 
+interface handleOnChangeLanguageFunc {
+  (value: any): void;
+}
+
 interface languageSwitcherProps extends Omit<selectProps, "options"> {
   options: string[];
 }
 
 interface headerProps extends Omit<languageSwitcherProps, "options"> {
   listLanguage: string[];
+  onChangeLanguage?: (value: string) => void;
 }
 
 interface layoutWithHeaderFooter extends mainProps, headerProps {}
@@ -203,4 +208,5 @@ export type {
   listsStyledProps,
   handleSetWidthFunc,
   handleSetLeftPositionFunc,
+  handleOnChangeLanguageFunc,
 };

@@ -10,7 +10,7 @@ function AboutMe(props: aboutMeprops) {
   return (
     <AboutMeStyled>
       <TitleContent title={title} />
-      <span>{content}</span>
+      <span className="tw-flex tw-text-center sm:tw-text-left">{content}</span>
     </AboutMeStyled>
   );
 }

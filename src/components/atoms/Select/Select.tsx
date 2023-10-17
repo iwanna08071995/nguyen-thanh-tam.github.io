@@ -1,7 +1,5 @@
 import React from "react";
-import { Button as ButtonAnt } from "antd";
-
-import { selectProps } from "@/interfaces";
+import { selectProps, handleOnChangeLanguageFunc } from "@/interfaces";
 
 import SelectStyled from "./SelectStyled";
 
@@ -13,8 +11,8 @@ const Select = (props: selectProps) => {
     className = "",
   } = props;
 
-  const handleOnChange = (value: unknown) => {
-    if (onChange !== undefined && typeof value === "string") {
+  const handleOnChange: handleOnChangeLanguageFunc = (value) => {
+    if (onChange) {
       onChange(value);
     }
   };

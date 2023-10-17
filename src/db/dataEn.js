@@ -53,6 +53,7 @@ const skills = {
     "GraphQL",
     "SVG",
     "RESTful API",
+    "knowledge C#",
   ],
 };
 
@@ -249,7 +250,7 @@ const experience = {
       ],
     },
     {
-      time: "11/2017 - 10/2019",
+      time: "02/2018 - 10/2019",
       company: "TicketSoft | GiiG",
       position: "Front End Developer",
       project: [
@@ -262,7 +263,30 @@ const experience = {
           technologies:
             "ReactJS, MobX, React UI Component Libraries ( Grommet ), CSS, Bootstrap, Webpack, ESLint",
           responsibilities: [
-            "Thiết kế và phát triển giao diện người dùng bao gồm các trang đăng ký, đăng nhập. Quản lý thông tin tài khoản. Tạo bài viết, chiến dịch bên phía thương hiệu, doanh nghiệp. Tìm kiếm bài viết, chiến dịch đã tạo. Tìm kiếm người nổi tiếng.",
+            "Thiết kế và phát triển giao diện người dùng bao gồm các trang đăng ký, đăng nhập. Quản lý thông tin tài khoản. Tạo bài viết, chiến dịch bên phía thương hiệu, doanh nghiệp. Tìm kiếm bài viết, chiến dịch đã tạo. Hiển thị và kiếm người nổi tiếng.",
+            "Làm việc và tích hợp API của Back End",
+            "Thiết kế và phát triển những UI Components",
+            "Áp dụng và sử dụng những thư viện, công nghệ mới",
+            "Cải thiện trải nghiệm người dùng",
+            "Tích hợp đa ngôn ngữ",
+          ],
+        },
+      ],
+    },
+    {
+      time: "6/2017 - 01/2018",
+      company: "FLEX Corp",
+      position: "Front End Developer",
+      project: [
+        {
+          name: "Healthcare CRM Phòng khám Đa Khoa Viện Gút",
+          teamSize:
+            "3 Front End, 4 Back End, 1 Designer, 1 Tester, 1 Team Leader, 1 Project Manager (PM)",
+          description:
+            "Healthcare CRM (Customer Relationship Management) là một hệ thống và phương pháp quản lý thông tin và tình trạng sức khỏe bệnh nhân.",
+          technologies: "ReactJS, JQuery, CSS, Bootstrap, Webpack, i18n",
+          responsibilities: [
+            "Thiết kế và phát triển giao diện người dùng bao gồm các trang quản lý thông tin bệnh nhân, bác sĩ. Quản lý và đặt lịch hẹn thăm khám sức khỏe với bác sĩ. Dự đoán và phân tích dữ liệu tình hình sức khỏe bệnh nhân theo triệu chứng. Quản lý thuốc, đơn giá. Chức năng chụp ảnh làm hồ sơ bệnh nhân ...",
             "Làm việc và tích hợp API của Back End",
             "Thiết kế và phát triển những UI Components",
             "Áp dụng và sử dụng những thư viện, công nghệ mới",
