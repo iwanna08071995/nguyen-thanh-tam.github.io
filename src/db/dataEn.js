@@ -3,7 +3,7 @@ import avatar from "@/app/avatar.jpg";
 const profile = {
   avatar: { src: avatar.src, size: 192 },
   name: "Nguyễn Thành Tâm",
-  location: "Thành phố Hồ Chí Minh, Việt Nam.",
+  location: "Ho Chi Minh City, Vietnam.",
   job: "Front End Developer",
 };
 
@@ -18,24 +18,24 @@ const contact = {
 
 const aboutMe = {
   title: "ABOUT ME",
-  content: `Thành thạo các ngôn ngữ HTML, CSS, JavaScript, và các framework như React, Vue.js. 
-  Có khả năng tối ưu hóa hiệu suất web và làm việc cùng các đội ngũ đa chức năng để xây dựng giao diện người dùng hấp dẫn và chất lượng. 
-  Sự tỉ mỉ và khả năng giải quyết vấn đề là điểm mạnh của tôi, luôn cập nhật kiến thức, công nghệ mới,
-  có khả năng giao tiếp tốt và làm việc nhóm hiệu quả để đảm bảo dự án thành công. Tôi cam kết mang đến các trang web và ứng dụng web thân thiện với người dùng và đẹp mắt.`,
+  content: `Proficient in HTML, CSS, JavaScript, and frameworks such as React, Vue.js. 
+  Capable of optimizing web performance and collaborating with cross-functional teams to build engaging and high-quality user interfaces. 
+  Attention to detail and problem-solving skills are my strengths. I always keep my knowledge and skills up to date with new technologies,
+  I have good communication skills and the ability to work effectively in teams to ensure project success. I am committed to delivering user-friendly and aesthetically pleasing websites and web applications.`,
 };
 
 const skillsSummary = {
   title: "SKILLS SUMMARY",
   content: [
-    "Có 6 năm làm việc với HTML, CSS, SCSS,  và JavaScript, JQuery, TypeScript với khả năng sử dụng các framework như ReactJS, NextJS và Vue.js.",
-    "Có 2 năm làm trưởng nhóm, xác định yêu cầu ban đầu cho đến việc triển khai, theo dõi tiến độ và đảm bảo rằng dự án hoàn thành đúng hạn. ",
-    "Thành thạo thiết kế giao diện người dùng (UI) và trải nghiệm người dùng (UX)",
-    "Kỹ năng xây dựng giao diện đáp ứng cho các thiết bị khác nhau và đảm bảo tính tương thích trên các trình duyệt.",
-    "Thành thạo trong việc sử dụng Git và các hệ thống quản lý phiên bản",
-    "Khả năng tối ưu hóa hiệu suất trang web để đảm bảo tải trang nhanh chóng và trải nghiệm người dùng mượt mà.",
-    "Thái độ làm việc tốt, luôn học hỏi và cập nhật với các xu hướng và phương pháp tốt nhất mới nhất trong ngành.",
-    "Khả năng làm việc với nhóm tốt, bao gồm mọi thành viên trong nhóm, cấp trên và khách hàng",
-    "Phát triển sản phẩm theo phương pháp Agile/Scrum",
+    "I have 6 years of experience working with HTML, CSS, SCSS, JavaScript, JQuery, and TypeScript, with the ability to use frameworks like ReactJS, NextJS, and Vue.js.",
+    "I have 2 years of experience as a team leader, from initial requirement definition to project deployment, monitoring progress, and ensuring that the project is completed on time.",
+    "Proficient in User Interface (UI) and User Experience (UX) design.",
+    "Skills in building responsive interfaces for various devices and ensuring compatibility across different browsers.",
+    "Proficient in using Git and version control systems.",
+    "Ability to optimize website performance to ensure fast page loading and smooth user experience.",
+    "A positive work attitude, always eager to learn and stay updated with the latest trends and best practices in the industry.",
+    "Strong teamwork skills, including collaboration with all team members, superiors, and clients.",
+    "Developing products using the Agile/Scrum methodology.",
   ],
 };
 
@@ -108,9 +108,9 @@ const education = {
   title: "EDUCATION",
   timeList: [
     {
-      position: "Sinh viên",
+      position: "Student",
       time: "8/2013 - 09/2017",
-      name: "Trường đại học Tây Nguyên",
+      name: "Tay Nguyen University",
     },
   ],
 };
@@ -136,16 +136,16 @@ const experience = {
           teamSize:
             "4 Front End, 4 Mobile, 5 Back End, 2 Quality Assurance (QA), 1 Designer, 1 Team Leader",
           description:
-            "Hệ thống quản lý tài sản khách sạn (Property Management System Hotel – PMS Hotel) giúp các khách sạn tổ chức, lập kế hoạch và quản lý toàn bộ hoạt động hàng ngày tại khách sạn một cách hiệu quả, xử lý các quy trình, tác vụ công việc như đặt phòng, nhận phòng, trả phòng, chỉ định phòng, thời gian lưu trú, dọn dẹp hay thanh toán ...",
+            "A Property Management System for hotels (PMS Hotel) helps hotels efficiently organize, plan, and manage their day-to-day operations. It handles processes and tasks such as reservations, check-ins, check-outs, room assignments, length of stay, housekeeping, and payments ...",
           technologies:
             "Atomic design pattern, React-boilerplate, ReactJS, SCSS, i18n, Tailwind CSS, LeafletJS, Webpack, Axios, Lodash, html2pdf, ESLint",
           responsibilities: [
-            "Thiết kế và phát triển giao diện người dùng các trang quản lý kho, trạng thái, tài sản phòng, bản đồ phòng, dịch vụ khách sạn, quản lý và giao việc cho nhân viên, xuất báo cáo, quản lý và phân quyền người dùng.",
-            "Tích hợp đa ngôn ngữ",
-            "Làm việc và tích hợp API của Back End",
-            "Áp dụng và sử dụng những thư viện, công nghệ mới phục vụ dự án",
-            "Cải thiện trải nghiệm người dùng",
-            "Thiết kế và phát triển những UI Components",
+            "Designing and developing user interfaces for inventory management pages, status, room assets, room maps, hotel services, employee management, report generation, and user access control.",
+            "Integrate multiple languages.",
+            "Working with and integrating backend APIs.",
+            "Applying and using new libraries and technologies to serve the project.",
+            "Improving the user experience.",
+            "Designing and developing UI components.",
           ],
         },
       ],
@@ -163,31 +163,31 @@ const experience = {
           technologies:
             "Atomic design pattern, ReactJS, TypeScript, Styled-component, Konva.js, canvas, Tailwind CSS, storybook, Context API, draw.io, ESLint",
           responsibilities: [
-            "Làm việc với vai trò trưởng nhóm",
-            "Xác định yêu cầu dự án và chọn công nghệ, thư viện sử dụng",
-            "Thiết lập và triển khai môi trường phát triển dự án",
-            "Thiết kế và phát triển giao diện người dùng bao gồm các nhãn, trường nhập liệu, sao lưu mẫu báo cáo, hoàn tác hoạt động, sao chép và dán ...",
-            "Làm việc và tích hợp API của Back End",
-            "Thiết kế và phát triển những UI Components",
-            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn",
-            "Áp dụng và sử dụng những thư viện, công nghệ mới",
-            "Cải thiện trải nghiệm người dùng",
-            "Viết tài liệu dự án SRS (Software Requirement Specification), Data Flow, UI/UX",
+            "Working in a team leader role.",
+            "Defining project requirements and selecting the technologies and libraries to use.",
+            "Setting up and deploying the project development environment.",
+            "Designing and developing the user interface, including labels, input fields, report templates, undo operations, copy and paste functions ...",
+            "Working with and integrating backend APIs.",
+            "Designing and developing UI components.",
+            "Reviewing source code and providing guidance to new team members to ensure source code quality.",
+            "Applying and using new libraries and technologies to serve the project.",
+            "Improving the user experience.",
+            "Writing project documentation, including Software Requirement Specification (SRS), Data Flow, and UI/UX documents.",
           ],
         },
         {
           name: "OMRON HEALTHCARE Co.,Ltd",
           teamSize: "1 Front End, 2 Back End, 1 Bridge System Engineer (BrSE)",
           description:
-            "Website quản lý và cung cấp thông tin y tế của người dùng cho chuyên gia y tế hoặc người quản lý thông tin sức khỏe.",
+            "A website for managing and providing users' medical information to healthcare professionals or health information managers.",
           technologies:
             "ReactJS, React Native, react-native-webview, Nestjs, Laravel PHP, Mysql, ESLint",
           responsibilities: [
-            "Thiết kế và phát triển giao diện người dùng bao gồm các thông tin sức khỏe người dùng theo thời gian, lịch uống thuốc, lời khuyên và tư ván của người quản lý thông tin sức khỏe, kênh trò chuyện nội bộ, đặt lịch thăm khám, kiểm tra sức khỏe ...",
-            "Tích hợp API của Back End",
-            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn",
-            "Cải thiện trải nghiệm người dùng",
-            "Thiết kế và phát triển những UI Components",
+            "Designing and developing the user interface, including user health information over time, medication schedules, advice and counseling from health information managers, internal chat channels, appointment scheduling, and health checks ...",
+            "Working with and integrating backend APIs.",
+            "Reviewing source code and providing guidance to new team members to ensure source code quality.",
+            "Improving the user experience.",
+            "Designing and developing UI components.",
           ],
         },
         {
@@ -195,16 +195,16 @@ const experience = {
           teamSize:
             "2 Front End, 3 Back End, 1 Designer, 1 Bridge System Engineer (BrSE), 1 Team Leader",
           description:
-            "Website quản lý và cung cấp thông tin, vé cho khách hàng tham gia công viên và khu vui chơi giải trí",
+            "A website for managing and providing information and tickets for customers visiting an amusement park and entertainment area.",
           technologies:
             "VueJS, Quasar framework, SCSS, Quasar Style CSS, Tailwind CSS, NestJS, Graphql, Lodash, LinePay, i18n, ESLint",
           responsibilities: [
-            "Thiết kế và phát triển giao diện người dùng bao gồm các trang tạo vé, thông tin và dịch vụ, sự kiện, lịch, thanh toán, mã QR, xuất và in vé, quản lý và phân quyền người dùng ...",
-            "Tích hợp API của Back End",
-            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn",
-            "Tích hợp đa ngôn ngữ",
-            "Cải thiện trải nghiệm người dùng",
-            "Thiết kế và phát triển những UI Components",
+            "Designing and developing the user interface, including ticket creation pages, information and services, events, calendars, payment, QR codes, ticket generation and printing, user access control and management ...",
+            "Working with and integrating backend APIs.",
+            "Reviewing source code and providing guidance to new team members to ensure source code quality.",
+            "Integrate multiple languages.",
+            "Improving the user experience.",
+            "Designing and developing UI components.",
           ],
         },
       ],
@@ -215,36 +215,36 @@ const experience = {
       position: "Front End Developer",
       project: [
         {
-          name: "LORA - Học cùng bé",
+          name: "LORA - Learning Together with Kids",
           teamSize: "2 Front End, 2 Back End, 1 Designer, 1 Team Leader",
           description:
-            "Website cung cấp chương trình học Toán, Tiếng Anh và Khoa Học trực tuyến dành cho trẻ từ 5 đến 10 tuổi",
+            "A website providing online Math, English, and Science programs for children aged 5 to 10.",
           technologies:
             "ReactJS, Redux, React UI Component Libraries ( Ant Design ), SCSS, Bootstrap, Styled-component, Webpack, BankPay, i18n, Chess.js, ESLint",
           responsibilities: [
-            "Làm việc với vai trò trưởng nhóm",
-            "Xác định yêu cầu dự án và chọn công nghệ, thư viện sử dụng",
-            "Thiết lập và triển khai môi trường phát triển dự án",
-            "Thiết kế và phát triển giao diện người dùng bao gồm các khóa học như toán, tiếng Anh, khoa học, cờ vua. Lịch sử và thời gian tham gia học. Đăng ký, đăng nhập, thông tin người dùng. Mua khóa học trực tuyến",
-            "Làm việc và tích hợp API của Back End",
-            "Thiết kế và phát triển những UI Components",
-            "Xem xét mã nguồn và hướng dẫn cho các thành viên mới của nhóm để đảm bảo chất lượng mã nguồn",
-            "Áp dụng và sử dụng những thư viện, công nghệ mới",
-            "Cải thiện trải nghiệm người dùng",
-            "Tích hợp đa ngôn ngữ với những khóa học tiếng Anh",
+            "Working in a team leader role.",
+            "Defining project requirements and selecting the technologies and libraries to use.",
+            "Setting up and deploying the project development environment.",
+            "Designing and developing the user interface, including courses such as Math, English, Science, and Chess. History and learning time. Registration, login, user information. Online course purchase ...",
+            "Working with and integrating backend APIs.",
+            "Designing and developing UI components.",
+            "Reviewing source code and providing guidance to new team members to ensure source code quality.",
+            "Applying and using new libraries and technologies to serve the project.",
+            "Improving the user experience.",
+            "Integrating multiple languages for English language courses.",
           ],
         },
         {
           name: "Cloud Spa",
           teamSize: "1 Front End, 1 Back End, 1 Designer, 1 Team Leader",
-          description: "Website Quản Lý Spa Online",
+          description: "Online Spa Management Website",
           technologies:
             "ReactJS, Redux, React UI Component Libraries ( Ant Design ), SCSS, Bootstrap, Styled-component, Webpack, ESLint",
           responsibilities: [
-            "Thiết kế và phát triển giao diện người dùng bao gồm các trang quản lý chi nhánh, nhân viên, dịch vụ, mã giảm giá, thông tin khách hàng, lịch sử dùng dịch vụ. Sản phẩm có thể bán. Thu nhập của chi nhánh, nhân viên theo thời gian",
-            "Tích hợp API của Back End",
-            "Cải thiện trải nghiệm người dùng",
-            "Thiết kế và phát triển những UI Components",
+            "Designing and developing the user interface, including branch management, employee management, services, discount codes, customer information, service usage history. The product may be sold. Branch and employee income over time ...",
+            "Working with and integrating backend APIs.",
+            "Improving the user experience.",
+            "Designing and developing UI components.",
           ],
         },
       ],
@@ -259,16 +259,16 @@ const experience = {
           teamSize:
             "2 Front End, 1 Back End, 1 Designer, 1 Quality Control (QC), 1 Project Manager (PM)",
           description:
-            "Website tìm kiếm và kết nối giữa các thương hiệu, doanh nghiệp với những người nổi tiếng, có sức ảnh hưởng lớn hoạt động nhiều trên các nền tảng mạng xã hội.",
+            "A website for searching and connecting brands and businesses with influencers who have a significant social media presence and influence.",
           technologies:
             "ReactJS, MobX, React UI Component Libraries ( Grommet ), CSS, Bootstrap, Webpack, ESLint",
           responsibilities: [
-            "Thiết kế và phát triển giao diện người dùng bao gồm các trang đăng ký, đăng nhập. Quản lý thông tin tài khoản. Tạo bài viết, chiến dịch bên phía thương hiệu, doanh nghiệp. Tìm kiếm bài viết, chiến dịch đã tạo. Hiển thị và kiếm người nổi tiếng.",
-            "Làm việc và tích hợp API của Back End",
-            "Thiết kế và phát triển những UI Components",
-            "Áp dụng và sử dụng những thư viện, công nghệ mới",
-            "Cải thiện trải nghiệm người dùng",
-            "Tích hợp đa ngôn ngữ",
+            "Designing and developing the user interface, including registration and login pages, account information management, post creation, brand and business campaigns management, search for created posts and campaigns, and displaying and finding influencers ...",
+            "Working with and integrating backend APIs.",
+            "Designing and developing UI components.",
+            "Applying and using new libraries and technologies to serve the project.",
+            "Improving the user experience.",
+            "Integrate multiple languages.",
           ],
         },
       ],
@@ -279,19 +279,19 @@ const experience = {
       position: "Front End Developer",
       project: [
         {
-          name: "Healthcare CRM Phòng khám Đa Khoa Viện Gút",
+          name: "Healthcare CRM for Gout General Clinic",
           teamSize:
             "3 Front End, 4 Back End, 1 Designer, 1 Tester, 1 Team Leader, 1 Project Manager (PM)",
           description:
-            "Healthcare CRM (Customer Relationship Management) là một hệ thống và phương pháp quản lý thông tin và tình trạng sức khỏe bệnh nhân.",
+            "Healthcare CRM (Customer Relationship Management) is a system and method for managing patient information and health status.",
           technologies: "ReactJS, JQuery, CSS, Bootstrap, Webpack, i18n",
           responsibilities: [
-            "Thiết kế và phát triển giao diện người dùng bao gồm các trang quản lý thông tin bệnh nhân, bác sĩ. Quản lý và đặt lịch hẹn thăm khám sức khỏe với bác sĩ. Dự đoán và phân tích dữ liệu tình hình sức khỏe bệnh nhân theo triệu chứng. Quản lý thuốc, đơn giá. Chức năng chụp ảnh làm hồ sơ bệnh nhân ...",
-            "Làm việc và tích hợp API của Back End",
-            "Thiết kế và phát triển những UI Components",
-            "Áp dụng và sử dụng những thư viện, công nghệ mới",
-            "Cải thiện trải nghiệm người dùng",
-            "Tích hợp đa ngôn ngữ",
+            "Designing and developing the user interface, including pages for patient and doctor information management, health checkup appointment scheduling with doctors, predicting and analyzing patient health data based on symptoms, medication and pricing management, and a feature for capturing patient profile photos ...",
+            "Working with and integrating backend APIs.",
+            "Designing and developing UI components.",
+            "Applying and using new libraries and technologies to serve the project.",
+            "Improving the user experience.",
+            "Integrate multiple languages.",
           ],
         },
       ],

@@ -14,7 +14,7 @@ function Info(props: infoProps) {
           className="sm:tw-flex tw-hidden"
           size={SIZE_ICON_DEFAULT}
         />
-        <span className="tw-text-xl tw-font-light tw-mt-2 tw-items-center lg:tw-items-start">
+        <span className="tw-text-xl tw-font-light tw-mt-2 tw-text-center sm:tw-text-left">
           {location}
         </span>
       </div>

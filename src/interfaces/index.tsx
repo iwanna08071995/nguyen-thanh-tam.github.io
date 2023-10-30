@@ -176,6 +176,18 @@ interface handleSetLeftPositionFunc {
   (): void;
 }
 
+interface handleUpdateDataFunc {
+  (lang: string): void;
+}
+
+interface saveDataToLocalStorageFunc {
+  (key: string, data: any): boolean;
+}
+
+interface getDataFromLocalStorageFunc {
+  (key: string): any | null;
+}
+
 export type {
   layoutWithHeaderFooter,
   buttonProps,
@@ -209,4 +221,7 @@ export type {
   handleSetWidthFunc,
   handleSetLeftPositionFunc,
   handleOnChangeLanguageFunc,
+  handleUpdateDataFunc,
+  saveDataToLocalStorageFunc,
+  getDataFromLocalStorageFunc,
 };

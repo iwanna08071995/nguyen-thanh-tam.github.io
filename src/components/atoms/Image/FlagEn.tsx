@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import { imageProps } from "@/interfaces";
 
 const FlagEn = (props: imageProps) => {
