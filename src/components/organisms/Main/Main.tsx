@@ -11,8 +11,8 @@ import SkillsList from "@/components/molecules/SkillsList/SkillsList";
 import { mainProps } from "@/interfaces";
 import TimeLine from "@/components/molecules/TimeLine";
 
-import MainStyled from "./MainStyled";
 import Languages from "@/components/molecules/Languages";
+import MainStyled from "./MainStyled";
 
 function Main(props: mainProps) {
   const {
@@ -34,9 +34,7 @@ function Main(props: mainProps) {
   } = props;
 
   return (
-    <MainStyled
-      className={`tw-max-w-7xl	tw-flex tw-flex-col tw-justify-between tw-container tw-mx-auto tw-px-4 `}
-    >
+    <MainStyled className="tw-max-w-7xl tw-flex tw-flex-col tw-justify-between tw-container tw-mx-auto tw-px-4 tw-mt-4">
       <LayoutWrapperContent
         leftPosition="center"
         ContentLeft={<Avatar src={src} size={size} />}

@@ -8,7 +8,7 @@ const profile = {
 };
 
 const contact = {
-  title: "CONTACT",
+  title: "LIÊN HỆ",
   phone: "(+84) 81.653.8938",
   website: "https://nguyenthanhtam73.github.io/",
   email: "nguyenthanhtam08071995@gmail.com",
@@ -17,7 +17,7 @@ const contact = {
 };
 
 const aboutMe = {
-  title: "ABOUT ME",
+  title: "VỀ TÔI",
   content: `Thành thạo các ngôn ngữ HTML, CSS, JavaScript, và các framework như React, Vue.js. 
   Có khả năng tối ưu hóa hiệu suất web và làm việc cùng các đội ngũ đa chức năng để xây dựng giao diện người dùng hấp dẫn và chất lượng. 
   Sự tỉ mỉ và khả năng giải quyết vấn đề là điểm mạnh của tôi, luôn cập nhật kiến thức, công nghệ mới,
@@ -25,7 +25,7 @@ const aboutMe = {
 };
 
 const skillsSummary = {
-  title: "SKILLS SUMMARY",
+  title: "TÓM TẮT KỸ NĂNG",
   content: [
     "Có 6 năm làm việc với HTML, CSS, SCSS,  và JavaScript, JQuery, TypeScript với khả năng sử dụng các framework như ReactJS, NextJS và Vue.js.",
     "Có 2 năm làm trưởng nhóm, xác định yêu cầu ban đầu cho đến việc triển khai, theo dõi tiến độ và đảm bảo rằng dự án hoàn thành đúng hạn. ",
@@ -40,7 +40,7 @@ const skillsSummary = {
 };
 
 const skills = {
-  title: "Languages",
+  title: "Ngôn ngữ",
   content: [
     "HTML5",
     "CSS3",
@@ -58,7 +58,7 @@ const skills = {
 };
 
 const libraries = {
-  title: "Libraries/Frameworks",
+  title: "Thư viện",
   content: [
     "Bootstrap",
     "Tailwind CSS",
@@ -89,7 +89,7 @@ const libraries = {
   ],
 };
 const software = {
-  title: "Software",
+  title: "Phần mềm",
   content: [
     "Figma",
     "Photoshop",
@@ -105,7 +105,7 @@ const software = {
 };
 
 const education = {
-  title: "EDUCATION",
+  title: "GIÁO DỤC",
   timeList: [
     {
       position: "Sinh viên",
@@ -116,18 +116,18 @@ const education = {
 };
 
 const languages = {
-  title: "LANGUAGES",
+  title: "NGÔN NGỮ",
   list: [
-    { lang: "English", level: "Communication" },
-    { lang: "Vietnamese", level: "Native" },
+    { lang: "English", level: "Giao tiếp" },
+    { lang: "Vietnamese", level: "Ngôn ngữ chính" },
   ],
 };
 
 const experience = {
-  title: "EXPERIENCE",
+  title: "KINH NGHIỆM",
   timeList: [
     {
-      time: "09/2022 - Present",
+      time: "09/2022 - Hiện tại",
       company: "FCS Computer Systems",
       position: "Front End Developer",
       project: [

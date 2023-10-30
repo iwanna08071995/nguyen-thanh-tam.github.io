@@ -8,6 +8,7 @@ import {
   languageSwitcherProps,
   handleOnChangeLanguageFunc,
 } from "@/interfaces";
+import i18n from "../../../lib/i18n";
 
 import LanguageSwitcherStyled from "./LanguageSwitcherStyled";
 
@@ -44,11 +45,7 @@ function LanguageSwitcher(props: languageSwitcherProps) {
   };
 
   const handleShowDefaultValue = () => {
-    if (checkArrayNotEmpty(options)) {
-      return options[0];
-    }
-
-    return "";
+    return i18n.language;
   };
 
   const handleOnChange: handleOnChangeLanguageFunc = (lang) => {
