@@ -188,6 +188,15 @@ interface getDataFromLocalStorageFunc {
   (key: string): any | null;
 }
 
+interface skeletonProps {
+  type: string;
+  rows?: string | number;
+}
+
+interface showSkeletonFunc {
+  (type: string, rows?: string | number): ReactNode;
+}
+
 export type {
   layoutWithHeaderFooter,
   buttonProps,
@@ -224,4 +233,6 @@ export type {
   handleUpdateDataFunc,
   saveDataToLocalStorageFunc,
   getDataFromLocalStorageFunc,
+  skeletonProps,
+  showSkeletonFunc,
 };

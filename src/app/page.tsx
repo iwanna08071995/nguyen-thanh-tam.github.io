@@ -92,10 +92,14 @@ const Home = () => {
     setData(dataClone);
   };
 
-  const handleOchangeLanguage: handleOnChangeLanguageFunc = (lang) => {
+  const handleOnChangeLanguage: handleOnChangeLanguageFunc = (lang) => {
     i18n.changeLanguage(lang);
     handleUpdateData(lang);
     saveDataToLocalStorage("lang", lang);
+  };
+
+  document.onreadystatechange = () => {
+    () => {};
   };
 
   const {
@@ -131,7 +135,7 @@ const Home = () => {
         education={education}
         languages={languages}
         experience={experience}
-        onChangeLanguage={handleOchangeLanguage}
+        onChangeLanguage={handleOnChangeLanguage}
       />
     </ConfigProvider>
   );
