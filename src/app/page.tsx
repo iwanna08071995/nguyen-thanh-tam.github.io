@@ -98,10 +98,6 @@ const Home = () => {
     saveDataToLocalStorage("lang", lang);
   };
 
-  document.onreadystatechange = () => {
-    () => {};
-  };
-
   const {
     profile,
     contact,
