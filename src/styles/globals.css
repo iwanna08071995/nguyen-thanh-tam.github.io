@@ -9,3 +9,9 @@
 span {
   font-size: 18px;
 }
+
+@media (max-width: 345px) {
+  span {
+    text-align: center;
+  }
+}
