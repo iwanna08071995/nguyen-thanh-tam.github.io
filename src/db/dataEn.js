@@ -1,4 +1,4 @@
-import avatar from "@/app/avatar.jpg";
+import avatar from "@/app/avatar_tam.jpg";
 
 const profile = {
   avatar: { src: avatar.src, size: 192 },

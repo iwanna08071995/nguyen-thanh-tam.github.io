@@ -3,6 +3,8 @@ import { ReactNode } from "react";
 interface buttonProps {
   children?: ReactNode;
   type?: "link" | "dashed" | "primary" | "text";
+  onClick?: () => void;
+  loading?: boolean;
 }
 
 interface selectProps {
@@ -197,6 +199,10 @@ interface showSkeletonFunc {
   (type: string, rows?: string | number): ReactNode;
 }
 
+interface handleOnExportToPDFFunc {
+  (): void;
+}
+
 export type {
   layoutWithHeaderFooter,
   buttonProps,
@@ -235,4 +241,5 @@ export type {
   getDataFromLocalStorageFunc,
   skeletonProps,
   showSkeletonFunc,
+  handleOnExportToPDFFunc,
 };
