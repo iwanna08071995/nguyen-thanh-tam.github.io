@@ -82,7 +82,6 @@ const getDataFromLocalStorage: getDataFromLocalStorageFunc = (key) => {
 
       // If data exists, parse it from a JSON string to a JavaScript object and return it
       if (jsonData) {
-        console.log("JSON.parse(jsonData)", JSON.parse(jsonData));
         return JSON.parse(jsonData);
       }
     }
