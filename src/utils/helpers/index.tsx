@@ -76,12 +76,15 @@ const saveDataToLocalStorage: saveDataToLocalStorageFunc = (key, data) => {
 // Function to retrieve data from localStorage
 const getDataFromLocalStorage: getDataFromLocalStorageFunc = (key) => {
   try {
-    // Get data from localStorage using the specified key
-    const jsonData = localStorage.getItem(key);
+    if (typeof window !== "undefined") {
+      // Get data from localStorage using the specified key
+      const jsonData = localStorage.getItem(key);
 
-    // If data exists, parse it from a JSON string to a JavaScript object and return it
-    if (jsonData) {
-      return JSON.parse(jsonData);
+      // If data exists, parse it from a JSON string to a JavaScript object and return it
+      if (jsonData) {
+        console.log("JSON.parse(jsonData)", JSON.parse(jsonData));
+        return JSON.parse(jsonData);
+      }
     }
 
     // Return null if data is not found
