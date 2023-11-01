@@ -10,6 +10,8 @@ export default function RootLayout({
   return (
     <html style={display.style}>
       <head>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Profile - Frontend Developer - Nguyễn Thành Tâm</title>
