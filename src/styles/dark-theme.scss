@@ -1,9 +1,29 @@
-// light-theme.less
+#dark-mode {
+  background-color: #1f2022;
 
-@import "~antd/lib/style/color/colorPalette.less";
-@import "~antd/dist/antd.less";
-@import "~antd/lib/style/themes/default.less";
+  hr {
+    border-top: solid white 1px;
+  }
 
-// These are shared variables that can be extracted to their own file
-@primary-color: #00adb5;
-@border-radius-base: 4px;
+  span {
+    color: white;
+  }
+
+  .ant-timeline-item-head.ant-timeline-item-head-custom {
+    background-color: transparent;
+  }
+
+  svg {
+    fill: white;
+  }
+
+  li {
+    color: white;
+  }
+
+  .ant-select-selector {
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px;
+  }
+}

@@ -5,13 +5,14 @@ import { ConfigProvider } from "antd";
 import i18n from "../lib/i18n";
 import LayoutWithHeaderFooter from "@/components/templates/LayoutWithHeaderFooter";
 
-import { LIST_LANGUAGE, LANGUAGES } from "@/utils/constant";
+import { LIST_LANGUAGE, LANGUAGES, MODE_DARK_LIGHT } from "@/utils/constant";
 import { deepClone, saveDataToLocalStorage } from "@/utils/helpers";
 
 import {
   handleOnChangeLanguageFunc,
   handleUpdateDataFunc,
   mainProps,
+  handleOnChangeDarkModeFunc,
 } from "@/interfaces";
 
 import {
@@ -41,6 +42,7 @@ import {
 } from "@/db/dataEn";
 
 const { EN } = LANGUAGES;
+const { LIGHT } = MODE_DARK_LIGHT;
 
 const Home = () => {
   const [data, setData] = useState<mainProps>({
@@ -55,6 +57,8 @@ const Home = () => {
     languages: languagesEn,
     experience: experienceEn,
   });
+
+  const [modeDark, setModeDark] = useState(LIGHT);
 
   useEffect(() => {
     handleUpdateData(i18n.language);
@@ -98,6 +102,10 @@ const Home = () => {
     saveDataToLocalStorage("lang", lang);
   };
 
+  const handleOnChangeDarkMode: handleOnChangeDarkModeFunc = (mode) => {
+    setModeDark(mode);
+  };
+
   const {
     profile,
     contact,
@@ -119,20 +127,24 @@ const Home = () => {
         },
       }}
     >
-      <LayoutWithHeaderFooter
-        listLanguage={LIST_LANGUAGE}
-        profile={profile}
-        contact={contact}
-        aboutMe={aboutMe}
-        skillsSummary={skillsSummary}
-        skills={skills}
-        libraries={libraries}
-        software={software}
-        education={education}
-        languages={languages}
-        experience={experience}
-        onChangeLanguage={handleOnChangeLanguage}
-      />
+      <div id={modeDark ? "dark-mode" : ""}>
+        <LayoutWithHeaderFooter
+          listLanguage={LIST_LANGUAGE}
+          profile={profile}
+          contact={contact}
+          aboutMe={aboutMe}
+          skillsSummary={skillsSummary}
+          skills={skills}
+          libraries={libraries}
+          software={software}
+          education={education}
+          languages={languages}
+          experience={experience}
+          onChangeLanguage={handleOnChangeLanguage}
+          onChangeDarkMode={handleOnChangeDarkMode}
+          className=""
+        />
+      </div>
     </ConfigProvider>
   );
 };

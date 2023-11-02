@@ -30,9 +30,12 @@ interface languageSwitcherProps extends Omit<selectProps, "options"> {
 interface headerProps extends Omit<languageSwitcherProps, "options"> {
   listLanguage: string[];
   onChangeLanguage?: (value: string) => void;
+  onChangeDarkMode?: (value: boolean) => void;
 }
 
-interface layoutWithHeaderFooter extends mainProps, headerProps {}
+interface layoutWithHeaderFooter extends mainProps, headerProps {
+  className: string;
+}
 
 interface imageProps {
   size?: string | number;
@@ -40,7 +43,7 @@ interface imageProps {
 
 interface switchDarkModeProps {
   size?: string | number;
-  mode?: number;
+  onChange?: (value: boolean) => void;
 }
 
 interface buttonExportPDFProps {
@@ -203,6 +206,10 @@ interface handleOnExportToPDFFunc {
   (): void;
 }
 
+interface handleOnChangeDarkModeFunc {
+  (value: any): void;
+}
+
 export type {
   layoutWithHeaderFooter,
   buttonProps,
@@ -242,4 +249,5 @@ export type {
   skeletonProps,
   showSkeletonFunc,
   handleOnExportToPDFFunc,
+  handleOnChangeDarkModeFunc,
 };

@@ -4,6 +4,7 @@ import Main from "../organisms/Main";
 import {
   layoutWithHeaderFooter,
   handleOnChangeLanguageFunc,
+  handleOnChangeDarkModeFunc,
 } from "@/interfaces";
 
 const layoutWithHeaderFooter = (props: layoutWithHeaderFooter) => {
@@ -20,6 +21,7 @@ const layoutWithHeaderFooter = (props: layoutWithHeaderFooter) => {
     languages,
     experience,
     onChangeLanguage,
+    onChangeDarkMode,
   } = props;
 
   const handleOchangeLanguage: handleOnChangeLanguageFunc = (lang) => {
@@ -28,11 +30,18 @@ const layoutWithHeaderFooter = (props: layoutWithHeaderFooter) => {
     }
   };
 
+  const handleOnChangeDarkMode: handleOnChangeDarkModeFunc = (mode) => {
+    if (onChangeDarkMode) {
+      onChangeDarkMode(mode);
+    }
+  };
+
   return (
-    <div className={`tw-flex tw-flex-col tw-min-h-screen tw-px-4 `}>
+    <div className={`tw-flex tw-flex-col tw-min-h-screen tw-px-4`}>
       <Header
         listLanguage={listLanguage}
         onChangeLanguage={handleOchangeLanguage}
+        onChangeDarkMode={handleOnChangeDarkMode}
       />
       <Main
         profile={profile}
