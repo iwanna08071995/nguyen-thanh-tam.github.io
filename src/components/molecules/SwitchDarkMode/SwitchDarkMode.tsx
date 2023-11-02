@@ -1,43 +1,58 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CiLight, CiDark } from "react-icons/ci";
 
 import { switchDarkModeProps } from "@/interfaces";
-import { LIST_MODE_DARK_LIGHT } from "@/utils/constant";
+import { MODE_DARK_LIGHT } from "@/utils/constant";
 
 import SwitchDarkModeStyled from "./SwitchDarkModeStyled";
 import Button from "@/components/atoms/Button";
 
-const { DARK, LIGHT } = LIST_MODE_DARK_LIGHT;
+const { DARK, LIGHT } = MODE_DARK_LIGHT;
 
 function SwitchDarkMode(props: switchDarkModeProps) {
-  const { size = "1.6rem", mode = LIGHT } = props;
+  const { size = "1.6rem", onChange } = props;
+  const [modeDark, setModeDark] = useState(LIGHT);
 
-  const checkShowModeSystem = () => {
-    const currentTime = new Date();
-    const currentHour = currentTime.getHours();
+  useEffect(() => {
+    const checkShowModeSystem = () => {
+      const currentTime = new Date();
+      const currentHour = currentTime.getHours();
 
-    const darkModeStartHour = 19; // 7:00 PM
-    const darkModeEndHour = 6; // 6:59 AM
+      const darkModeStartHour = 19; // 7:00 PM
+      const darkModeEndHour = 6; // 6:59 AM
 
-    if (currentHour >= darkModeStartHour || currentHour < darkModeEndHour) {
-      return <CiDark size={size} />;
-    } else {
-      return <CiLight size={size} />;
+      if (currentHour >= darkModeStartHour || currentHour < darkModeEndHour) {
+        setModeDark(DARK);
+      } else {
+        setModeDark(LIGHT);
+      }
+    };
+
+    checkShowModeSystem();
+  }, []);
+
+  useEffect(() => {
+    if (onChange) {
+      onChange(modeDark);
     }
+  }, [modeDark]);
+
+  const handleOnChangeMode = () => {
+    setModeDark(!modeDark);
   };
 
   const showMode = () => {
-    switch (mode) {
-      case DARK:
-        return <CiDark size={size} />;
-      default:
-        return <CiLight size={size} />;
+    if (modeDark) {
+      return <CiDark size={size} />;
     }
+    return <CiLight size={size} />;
   };
 
   return (
     <SwitchDarkModeStyled>
-      <Button type="text">{showMode()}</Button>
+      <Button type="text" onClick={handleOnChangeMode}>
+        {showMode()}
+      </Button>
     </SwitchDarkModeStyled>
   );
 }

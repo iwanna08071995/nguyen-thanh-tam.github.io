@@ -1,6 +1,7 @@
 import { display } from "@/styles/fonts";
 
 import "@/styles/globals.css";
+import "@/styles/dark-theme.scss";
 
 export default function RootLayout({
   children,
@@ -20,9 +21,7 @@ export default function RootLayout({
           content="Nguyễn Thành Tâm - Frontend Developer with skills in HTML, CSS, JavaScript, and React. View CV for more information on work experience and projects."
         />
       </head>
-      <body>
-        <>{children}</>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
