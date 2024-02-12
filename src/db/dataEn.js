@@ -159,7 +159,7 @@ const experience = {
           name: "Miroku Genius",
           teamSize:
             "5 Front End, 2 Back End, 1 Bridge System Engineer (BrSE), 2 Team Leader",
-          description: "Website tạo mẫu báo cáo",
+          description: "Website for generating report templates",
           technologies:
             "Atomic design pattern, ReactJS, TypeScript, Styled-component, Konva.js, canvas, Tailwind CSS, storybook, Context API, draw.io, ESLint",
           responsibilities: [
